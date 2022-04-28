@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_evo_1_1_map_object" xml:lang="en-US">
+<title>Evo.MapObject&lt; TValue &gt; Class Template Reference</title>
+<indexterm><primary>Evo.MapObject&lt; TValue &gt;</primary></indexterm>
+Inheritance diagram for Evo.MapObject&lt; TValue &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_map_object__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Evo.MapObject&lt; TValue &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_map_object__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_evo_1_1_map_object_1a83a1b0e7d9f9685d0781e464ea46c7ad">DoSet</link> (string key, TValue value)</para>
+</listitem>
+            <listitem><para>TValue <link linkend="_class_evo_1_1_map_object_1ad95fe21403ba2d10bce63223bcb8dc64">DoGet</link> (string key)</para>
+</listitem>
+            <listitem><para>T1 <link linkend="_class_evo_1_1_map_object_1a11a8d0ea1a432e34ae4a77efa91623d7">DoGet&lt; T1 &gt;</link> (string key)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_evo_1_1_map_object_1a30e0fa3717d3c21fdf7e3c98f5e093b5">DoDel</link> (string key)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_evo_1_1_map_object_1af3fd40284d22d9ac0c6c75fdeb20989d">ToStream</link> (Stream stream)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_evo_1_1_map_object_1ab0c1f615e693764b54af2233187886a5">FromStream</link> (Stream stream)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_evo_1_1_map_object_1a30e0fa3717d3c21fdf7e3c98f5e093b5"/><section>
+    <title>DoDel()</title>
+<indexterm><primary>DoDel</primary><secondary>Evo.MapObject&lt; TValue &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapObject&lt; TValue &gt;</primary><secondary>DoDel</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_evo_1_1_map_object">Evo.MapObject</link>&lt; TValue &gt;.DoDel (string key)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_object_1ad95fe21403ba2d10bce63223bcb8dc64"/><section>
+    <title>DoGet()</title>
+<indexterm><primary>DoGet</primary><secondary>Evo.MapObject&lt; TValue &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapObject&lt; TValue &gt;</primary><secondary>DoGet</secondary></indexterm>
+<para><computeroutput>TValue <link linkend="_class_evo_1_1_map_object">Evo.MapObject</link>&lt; TValue &gt;.DoGet (string key)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_object_1a11a8d0ea1a432e34ae4a77efa91623d7"/><section>
+    <title>DoGet&lt; T1 &gt;()</title>
+<indexterm><primary>DoGet&lt; T1 &gt;</primary><secondary>Evo.MapObject&lt; TValue &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapObject&lt; TValue &gt;</primary><secondary>DoGet&lt; T1 &gt;</secondary></indexterm>
+<para><computeroutput>T1 <link linkend="_class_evo_1_1_map_object">Evo.MapObject</link>&lt; TValue &gt;.<link linkend="_class_evo_1_1_map_object_1ad95fe21403ba2d10bce63223bcb8dc64">DoGet</link>&lt; T1 &gt; (string key)</computeroutput></para><simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T1:TValue</emphasis></para>
+</simplesect>
+</section>
+<anchor xml:id="_class_evo_1_1_map_object_1a83a1b0e7d9f9685d0781e464ea46c7ad"/><section>
+    <title>DoSet()</title>
+<indexterm><primary>DoSet</primary><secondary>Evo.MapObject&lt; TValue &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapObject&lt; TValue &gt;</primary><secondary>DoSet</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_evo_1_1_map_object">Evo.MapObject</link>&lt; TValue &gt;.DoSet (string key, TValue value)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_object_1ab0c1f615e693764b54af2233187886a5"/><section>
+    <title>FromStream()</title>
+<indexterm><primary>FromStream</primary><secondary>Evo.MapObject&lt; TValue &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapObject&lt; TValue &gt;</primary><secondary>FromStream</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_evo_1_1_map_object">Evo.MapObject</link>&lt; TValue &gt;.FromStream (Stream stream)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_object_1af3fd40284d22d9ac0c6c75fdeb20989d"/><section>
+    <title>ToStream()</title>
+<indexterm><primary>ToStream</primary><secondary>Evo.MapObject&lt; TValue &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapObject&lt; TValue &gt;</primary><secondary>ToStream</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_evo_1_1_map_object">Evo.MapObject</link>&lt; TValue &gt;.ToStream (Stream stream)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__map_object_8cs">MapObject.cs</link></section>
+</section>

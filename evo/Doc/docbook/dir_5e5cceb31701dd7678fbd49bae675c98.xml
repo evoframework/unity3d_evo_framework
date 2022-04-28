@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_5e5cceb31701dd7678fbd49bae675c98" xml:lang="en-US">
+<title>evo_core_file Directory Reference</title>
+<indexterm><primary>evo_core_file Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_30047cced76379998a601f3149688114">entity</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_87a04520bb3405057cfa21250b0dbb11">utility</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

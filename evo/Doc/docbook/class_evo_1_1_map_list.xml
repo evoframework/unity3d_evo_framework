@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_evo_1_1_map_list" xml:lang="en-US">
+<title>Evo.MapList&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary></indexterm>
+Inheritance diagram for Evo.MapList&lt; T &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_map_list__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Evo.MapList&lt; T &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_map_list__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>IEnumerator&lt; T &gt; <link linkend="_class_evo_1_1_map_list_1a2c768dc13a97cb74df125422429025af">GetEnumerator</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_evo_1_1_map_list_1aff24fe3fe3601a91384f8f8ac97325bc">Add</link> (T item)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_evo_1_1_map_list_1a39a27ed5b4a3dfd9bfbb7ef7c6cb40b4">Clear</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_evo_1_1_map_list_1ac0613f101ace1525525f2e0f535eeb96">Contains</link> (T item)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_evo_1_1_map_list_1a31627fbc95ad5c5baa89d3114de5edbc">CopyTo</link> (T[] array, int arrayIndex)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_evo_1_1_map_list_1ae114227c2baa65d6ca63e4a44225d231">Remove</link> (T item)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_evo_1_1_map_list_1aee0db31a26b15838d251ef55a6076c20">IndexOf</link> (T item)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_evo_1_1_map_list_1ad776456d849350c83afbd354ac84a96e">Insert</link> (int index, T item)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_evo_1_1_map_list_1ae56e3abebbedf96b29c873c04ed93022">RemoveAt</link> (int index)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_evo_1_1_map_list_1a0e87c925246cb2b4552aa5d5a2fb638e">Count</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_evo_1_1_map_list_1acd35a235a4ced57af6869de45b1d2020">IsReadOnly</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>T <link linkend="_class_evo_1_1_map_list_1a53784631acd082aa277dbd30f4532584">this[int index]</link><computeroutput> [getset]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_evo_1_1_map_list_1aff24fe3fe3601a91384f8f8ac97325bc"/><section>
+    <title>Add()</title>
+<indexterm><primary>Add</primary><secondary>Evo.MapList&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary><secondary>Add</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_evo_1_1_map_list">Evo.MapList</link>&lt; T &gt;.Add (T item)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_list_1a39a27ed5b4a3dfd9bfbb7ef7c6cb40b4"/><section>
+    <title>Clear()</title>
+<indexterm><primary>Clear</primary><secondary>Evo.MapList&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary><secondary>Clear</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_evo_1_1_map_list">Evo.MapList</link>&lt; T &gt;.Clear ( )</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_list_1ac0613f101ace1525525f2e0f535eeb96"/><section>
+    <title>Contains()</title>
+<indexterm><primary>Contains</primary><secondary>Evo.MapList&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary><secondary>Contains</secondary></indexterm>
+<para><computeroutput>bool <link linkend="_class_evo_1_1_map_list">Evo.MapList</link>&lt; T &gt;.Contains (T item)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_list_1a31627fbc95ad5c5baa89d3114de5edbc"/><section>
+    <title>CopyTo()</title>
+<indexterm><primary>CopyTo</primary><secondary>Evo.MapList&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary><secondary>CopyTo</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_evo_1_1_map_list">Evo.MapList</link>&lt; T &gt;.CopyTo (T[] array, int arrayIndex)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_list_1a2c768dc13a97cb74df125422429025af"/><section>
+    <title>GetEnumerator()</title>
+<indexterm><primary>GetEnumerator</primary><secondary>Evo.MapList&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary><secondary>GetEnumerator</secondary></indexterm>
+<para><computeroutput>IEnumerator&lt; T &gt; <link linkend="_class_evo_1_1_map_list">Evo.MapList</link>&lt; T &gt;.GetEnumerator ( )</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_list_1aee0db31a26b15838d251ef55a6076c20"/><section>
+    <title>IndexOf()</title>
+<indexterm><primary>IndexOf</primary><secondary>Evo.MapList&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary><secondary>IndexOf</secondary></indexterm>
+<para><computeroutput>int <link linkend="_class_evo_1_1_map_list">Evo.MapList</link>&lt; T &gt;.IndexOf (T item)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_list_1ad776456d849350c83afbd354ac84a96e"/><section>
+    <title>Insert()</title>
+<indexterm><primary>Insert</primary><secondary>Evo.MapList&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary><secondary>Insert</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_evo_1_1_map_list">Evo.MapList</link>&lt; T &gt;.Insert (int index, T item)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_list_1ae114227c2baa65d6ca63e4a44225d231"/><section>
+    <title>Remove()</title>
+<indexterm><primary>Remove</primary><secondary>Evo.MapList&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary><secondary>Remove</secondary></indexterm>
+<para><computeroutput>bool <link linkend="_class_evo_1_1_map_list">Evo.MapList</link>&lt; T &gt;.Remove (T item)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_list_1ae56e3abebbedf96b29c873c04ed93022"/><section>
+    <title>RemoveAt()</title>
+<indexterm><primary>RemoveAt</primary><secondary>Evo.MapList&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary><secondary>RemoveAt</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_evo_1_1_map_list">Evo.MapList</link>&lt; T &gt;.RemoveAt (int index)</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_evo_1_1_map_list_1a0e87c925246cb2b4552aa5d5a2fb638e"/><section>
+    <title>Count</title>
+<indexterm><primary>Count</primary><secondary>Evo.MapList&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary><secondary>Count</secondary></indexterm>
+<para><computeroutput>int <link linkend="_class_evo_1_1_map_list">Evo.MapList</link>&lt; T &gt;.Count<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_list_1acd35a235a4ced57af6869de45b1d2020"/><section>
+    <title>IsReadOnly</title>
+<indexterm><primary>IsReadOnly</primary><secondary>Evo.MapList&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary><secondary>IsReadOnly</secondary></indexterm>
+<para><computeroutput>bool <link linkend="_class_evo_1_1_map_list">Evo.MapList</link>&lt; T &gt;.IsReadOnly<computeroutput>[get]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_map_list_1a53784631acd082aa277dbd30f4532584"/><section>
+    <title>this[int index]</title>
+<indexterm><primary>this[int index]</primary><secondary>Evo.MapList&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Evo.MapList&lt; T &gt;</primary><secondary>this[int index]</secondary></indexterm>
+<para><computeroutput>T <link linkend="_class_evo_1_1_map_list">Evo.MapList</link>&lt; T &gt;.this[int index]<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__map_list_8cs">MapList.cs</link></section>
+</section>

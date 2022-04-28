@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_evo_1_1_editor_evo_object" xml:lang="en-US">
+<title>Evo.EditorEvoObject Class Reference</title>
+<indexterm><primary>Evo.EditorEvoObject</primary></indexterm>
+Inheritance diagram for Evo.EditorEvoObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_editor_evo_object__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Evo.EditorEvoObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_editor_evo_object__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_evo_1_1_id">Evo.Id</link> <link linkend="_class_evo_1_1_editor_evo_object_1a19be53c9ed10e473b3e3decd8eb1ff69">iD</link><computeroutput> [getset]</computeroutput>
+</para>
+
+<para><link linkend="_struct_evo_1_1_id">Id</link> </para>
+</listitem>
+            <listitem><para><link linkend="_struct_evo_1_1_time">Evo.Time</link> <link linkend="_class_evo_1_1_editor_evo_object_1ae9ac6b7f4142e6b770a8f65d463b2a16">time</link><computeroutput> [getset]</computeroutput>
+</para>
+
+<para><link linkend="_struct_evo_1_1_time">Time</link> </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_evo_1_1_editor_evo_object_1a19be53c9ed10e473b3e3decd8eb1ff69"/><section>
+    <title>iD</title>
+<indexterm><primary>iD</primary><secondary>Evo.EditorEvoObject</secondary></indexterm>
+<indexterm><primary>Evo.EditorEvoObject</primary><secondary>iD</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_evo_1_1_id">Evo.Id</link> Evo.EditorEvoObject.iD<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_struct_evo_1_1_id">Id</link> </para>
+</para>
+</section>
+<anchor xml:id="_class_evo_1_1_editor_evo_object_1ae9ac6b7f4142e6b770a8f65d463b2a16"/><section>
+    <title>time</title>
+<indexterm><primary>time</primary><secondary>Evo.EditorEvoObject</secondary></indexterm>
+<indexterm><primary>Evo.EditorEvoObject</primary><secondary>time</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_evo_1_1_time">Evo.Time</link> Evo.EditorEvoObject.time<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_struct_evo_1_1_time">Time</link> </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__editor_evo_object_8cs">EditorEvoObject.cs</link></section>
+</section>

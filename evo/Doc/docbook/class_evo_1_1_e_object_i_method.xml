@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_evo_1_1_e_object_i_method" xml:lang="en-US">
+<title>Evo.EObjectIMethod Class Reference</title>
+<indexterm><primary>Evo.EObjectIMethod</primary></indexterm>
+Inheritance diagram for Evo.EObjectIMethod:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_e_object_i_method__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Evo.EObjectIMethod:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_e_object_i_method__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_evo_1_1_e_object_i_method_1a211811bcd7a3ee2851e6370f49e95067">name</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_evo_1_1_e_object_i_method_1a4e1b32f115ea71f8f608581e2fe4b043">parameter</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_evo_1a1eef5ced897d4b3788ef930072fd22e0">EnumVisibilty</link> <link linkend="_class_evo_1_1_e_object_i_method_1a57f7bac8a304547d06df263da525c367">visibility</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_evo_1_1_id">Evo.Id</link> <link linkend="_class_evo_1_1_e_object_i_method_1a4f37018ab3143d2e26b128a111d8b6bf">iD</link><computeroutput> [getset]</computeroutput>
+</para>
+
+<para><link linkend="_struct_evo_1_1_id">Id</link> </para>
+</listitem>
+            <listitem><para><link linkend="_struct_evo_1_1_time">Evo.Time</link> <link linkend="_class_evo_1_1_e_object_i_method_1ac17e4ffb6e44d902853a383a8b13aff9">time</link><computeroutput> [getset]</computeroutput>
+</para>
+
+<para><link linkend="_struct_evo_1_1_time">Time</link> </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_evo_1_1_e_object_i_method_1a211811bcd7a3ee2851e6370f49e95067"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>Evo.EObjectIMethod</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIMethod</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>string Evo.EObjectIMethod.name</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_method_1a4e1b32f115ea71f8f608581e2fe4b043"/><section>
+    <title>parameter</title>
+<indexterm><primary>parameter</primary><secondary>Evo.EObjectIMethod</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIMethod</primary><secondary>parameter</secondary></indexterm>
+<para><computeroutput>string Evo.EObjectIMethod.parameter</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_method_1a57f7bac8a304547d06df263da525c367"/><section>
+    <title>visibility</title>
+<indexterm><primary>visibility</primary><secondary>Evo.EObjectIMethod</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIMethod</primary><secondary>visibility</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_evo_1a1eef5ced897d4b3788ef930072fd22e0">EnumVisibilty</link> Evo.EObjectIMethod.visibility</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_evo_1_1_e_object_i_method_1a4f37018ab3143d2e26b128a111d8b6bf"/><section>
+    <title>iD</title>
+<indexterm><primary>iD</primary><secondary>Evo.EObjectIMethod</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIMethod</primary><secondary>iD</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_evo_1_1_id">Evo.Id</link> Evo.EObjectIMethod.iD<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_struct_evo_1_1_id">Id</link> </para>
+</para>
+</section>
+<anchor xml:id="_class_evo_1_1_e_object_i_method_1ac17e4ffb6e44d902853a383a8b13aff9"/><section>
+    <title>time</title>
+<indexterm><primary>time</primary><secondary>Evo.EObjectIMethod</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIMethod</primary><secondary>time</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_evo_1_1_time">Evo.Time</link> Evo.EObjectIMethod.time<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_struct_evo_1_1_time">Time</link> </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__e_object_method_8cs">EObjectMethod.cs</link></section>
+</section>

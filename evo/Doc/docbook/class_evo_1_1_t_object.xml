@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_evo_1_1_t_object" xml:lang="en-US">
+<title>Evo.TObject Class Reference</title>
+<indexterm><primary>Evo.TObject</primary></indexterm>
+Inheritance diagram for Evo.TObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_t_object__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Evo.TObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_t_object__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_interface_evo_1_1_i_e_object">IEObject</link> <link linkend="_class_evo_1_1_t_object_1a291b9724715a2ceb841e566a821dac6a">parent</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_evo_1_1_t_object_1a05679debc0071ee6322efe6570228862">isUpdate</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_evo_1_1_t_object_1a394b4ed4966f3f75eaf78401cc562dd9">size</link></para>
+</listitem>
+            <listitem><para>MemoryStream <link linkend="_class_evo_1_1_t_object_1a6cfcd6b9d527d34df68a469da09fdbd9">memoryStream</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_evo_1_1_t_object_1adeb463d4496de86d705e5bad5d09e0ee">name</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_evo_1_1_t_object_1a05679debc0071ee6322efe6570228862"/><section>
+    <title>isUpdate</title>
+<indexterm><primary>isUpdate</primary><secondary>Evo.TObject</secondary></indexterm>
+<indexterm><primary>Evo.TObject</primary><secondary>isUpdate</secondary></indexterm>
+<para><computeroutput>bool Evo.TObject.isUpdate</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_t_object_1a6cfcd6b9d527d34df68a469da09fdbd9"/><section>
+    <title>memoryStream</title>
+<indexterm><primary>memoryStream</primary><secondary>Evo.TObject</secondary></indexterm>
+<indexterm><primary>Evo.TObject</primary><secondary>memoryStream</secondary></indexterm>
+<para><computeroutput>MemoryStream Evo.TObject.memoryStream</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_t_object_1adeb463d4496de86d705e5bad5d09e0ee"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>Evo.TObject</secondary></indexterm>
+<indexterm><primary>Evo.TObject</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>string Evo.TObject.name</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_t_object_1a291b9724715a2ceb841e566a821dac6a"/><section>
+    <title>parent</title>
+<indexterm><primary>parent</primary><secondary>Evo.TObject</secondary></indexterm>
+<indexterm><primary>Evo.TObject</primary><secondary>parent</secondary></indexterm>
+<para><computeroutput><link linkend="_interface_evo_1_1_i_e_object">IEObject</link> Evo.TObject.parent</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_t_object_1a394b4ed4966f3f75eaf78401cc562dd9"/><section>
+    <title>size</title>
+<indexterm><primary>size</primary><secondary>Evo.TObject</secondary></indexterm>
+<indexterm><primary>Evo.TObject</primary><secondary>size</secondary></indexterm>
+<para><computeroutput>int Evo.TObject.size</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__t_object_8cs">TObject.cs</link></section>
+</section>

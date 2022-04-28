@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__iu_crypt_hmac_sha512_8cs" xml:lang="en-US">
+<title>IuCryptHmacSha512.cs File Reference</title>
+<indexterm><primary>IuCryptHmacSha512.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_evo_1_1_iu_crypt_hmac">Evo.IuCryptHmac</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_evo">Evo</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

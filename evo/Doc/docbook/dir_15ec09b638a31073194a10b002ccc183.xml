@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_15ec09b638a31073194a10b002ccc183" xml:lang="en-US">
+<title>entity Directory Reference</title>
+<indexterm><primary>entity Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__e_message_8cs">EMessage.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__e_message_struct_8cs">EMessageStruct.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

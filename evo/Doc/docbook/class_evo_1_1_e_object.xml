@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_evo_1_1_e_object" xml:lang="en-US">
+<title>Evo.EObject Class Reference</title>
+<indexterm><primary>Evo.EObject</primary></indexterm>
+Inheritance diagram for Evo.EObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_e_object__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Evo.EObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_e_object__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_evo_1_1_e_object_1a106b173713863f8af890a0bbe43d20c3">EObject</link> ()</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_evo_1_1_e_object_1a659c6a902bf0178851918aa3187b666c">ToStream</link> (System.IO.Stream stream)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_evo_1_1_e_object_1a74fdde1886be63a74b17bdfdbf09e839">FromStream</link> (System.IO.Stream stream)</para>
+</listitem>
+            <listitem><para>override string <link linkend="_class_evo_1_1_e_object_1ad041f4ff7574f5fc3a9496a091a4c842">ToString</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_evo_1_1_id">Evo.Id</link> <link linkend="_class_evo_1_1_e_object_1a2f782f380fe3a7a65a699405133a69c6">iD</link><computeroutput> [getset]</computeroutput>
+</para>
+
+<para><link linkend="_struct_evo_1_1_id">Id</link> </para>
+</listitem>
+            <listitem><para><link linkend="_struct_evo_1_1_time">Evo.Time</link> <link linkend="_class_evo_1_1_e_object_1a47cc82e815ccf36ccfddc399d9c20760">time</link><computeroutput> [getset]</computeroutput>
+</para>
+
+<para><link linkend="_struct_evo_1_1_time">Time</link> </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_evo_1_1_e_object_1a106b173713863f8af890a0bbe43d20c3"/><section>
+    <title>EObject()</title>
+<indexterm><primary>EObject</primary><secondary>Evo.EObject</secondary></indexterm>
+<indexterm><primary>Evo.EObject</primary><secondary>EObject</secondary></indexterm>
+<para><computeroutput>Evo.EObject.EObject ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_evo_1_1_e_object_1a74fdde1886be63a74b17bdfdbf09e839"/><section>
+    <title>FromStream()</title>
+<indexterm><primary>FromStream</primary><secondary>Evo.EObject</secondary></indexterm>
+<indexterm><primary>Evo.EObject</primary><secondary>FromStream</secondary></indexterm>
+<para><computeroutput>virtual void Evo.EObject.FromStream (System.IO.Stream stream)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_interface_evo_1_1_i_binary_1a383aeea1dcada1f4fff2f480342fd2e8">Evo.IBinary</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_e_object_a74fdde1886be63a74b17bdfdbf09e839_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_evo_1_1_e_object_1a659c6a902bf0178851918aa3187b666c"/><section>
+    <title>ToStream()</title>
+<indexterm><primary>ToStream</primary><secondary>Evo.EObject</secondary></indexterm>
+<indexterm><primary>Evo.EObject</primary><secondary>ToStream</secondary></indexterm>
+<para><computeroutput>virtual void Evo.EObject.ToStream (System.IO.Stream stream)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_interface_evo_1_1_i_binary_1ab6e23f5f51036e3b135592eaae33cddf">Evo.IBinary</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_e_object_a659c6a902bf0178851918aa3187b666c_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_evo_1_1_e_object_1ad041f4ff7574f5fc3a9496a091a4c842"/><section>
+    <title>ToString()</title>
+<indexterm><primary>ToString</primary><secondary>Evo.EObject</secondary></indexterm>
+<indexterm><primary>Evo.EObject</primary><secondary>ToString</secondary></indexterm>
+<para><computeroutput>override string Evo.EObject.ToString ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_evo_1_1_e_object_1a2f782f380fe3a7a65a699405133a69c6"/><section>
+    <title>iD</title>
+<indexterm><primary>iD</primary><secondary>Evo.EObject</secondary></indexterm>
+<indexterm><primary>Evo.EObject</primary><secondary>iD</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_evo_1_1_id">Evo.Id</link> Evo.EObject.iD<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_struct_evo_1_1_id">Id</link> </para>
+</para>
+</section>
+<anchor xml:id="_class_evo_1_1_e_object_1a47cc82e815ccf36ccfddc399d9c20760"/><section>
+    <title>time</title>
+<indexterm><primary>time</primary><secondary>Evo.EObject</secondary></indexterm>
+<indexterm><primary>Evo.EObject</primary><secondary>time</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_evo_1_1_time">Evo.Time</link> Evo.EObject.time<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_struct_evo_1_1_time">Time</link> </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__e_object_8cs">EObject.cs</link></section>
+</section>

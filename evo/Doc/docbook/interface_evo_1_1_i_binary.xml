@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_evo_1_1_i_binary" xml:lang="en-US">
+<title>Evo.IBinary Interface Reference</title>
+<indexterm><primary>Evo.IBinary</primary></indexterm>
+Inheritance diagram for Evo.IBinary:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_evo_1_1_i_binary__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Evo.IBinary:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_evo_1_1_i_binary__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_interface_evo_1_1_i_binary_1ab6e23f5f51036e3b135592eaae33cddf">ToStream</link> (System.IO.Stream stream)</para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_evo_1_1_i_binary_1a383aeea1dcada1f4fff2f480342fd2e8">FromStream</link> (System.IO.Stream stream)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_interface_evo_1_1_i_binary_1a383aeea1dcada1f4fff2f480342fd2e8"/><section>
+    <title>FromStream()</title>
+<indexterm><primary>FromStream</primary><secondary>Evo.IBinary</secondary></indexterm>
+<indexterm><primary>Evo.IBinary</primary><secondary>FromStream</secondary></indexterm>
+<para><computeroutput>void Evo.IBinary.FromStream (System.IO.Stream stream)</computeroutput></para><para>
+Implemented in <link linkend="_class_evo_1_1_e_object_1a74fdde1886be63a74b17bdfdbf09e839">Evo.EObject</link>.</para>
+</section>
+<anchor xml:id="_interface_evo_1_1_i_binary_1ab6e23f5f51036e3b135592eaae33cddf"/><section>
+    <title>ToStream()</title>
+<indexterm><primary>ToStream</primary><secondary>Evo.IBinary</secondary></indexterm>
+<indexterm><primary>Evo.IBinary</primary><secondary>ToStream</secondary></indexterm>
+<para><computeroutput>void Evo.IBinary.ToStream (System.IO.Stream stream)</computeroutput></para><para>
+Implemented in <link linkend="_class_evo_1_1_e_object_1a659c6a902bf0178851918aa3187b666c">Evo.EObject</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_evo_1_1_i_binary_ab6e23f5f51036e3b135592eaae33cddf_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this interface was generated from the following file:</para>
+<link linkend="__i_binary_8cs">IBinary.cs</link></section>
+</section>

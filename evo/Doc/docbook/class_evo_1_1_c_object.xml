@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_evo_1_1_c_object" xml:lang="en-US">
+<title>Evo.CObject Class Reference</title>
+<indexterm><primary>Evo.CObject</primary></indexterm>
+Inheritance diagram for Evo.CObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_c_object__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Evo.CObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_c_object__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_evo_1_1_c_object_1a0884c27b5fddde62380e2d8b5d3342c3">OnDidStart</link> (System.Object obj)</para>
+
+<para>OnDidStart </para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_evo_1_1_c_object_1a431bce615a9c6642f35337c28e4a013b">OnDidStop</link> (System.Object obj)</para>
+
+<para>OnDidStop </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_evo_1_1_c_object_1ad04805ec0e53aa5dc26747ccb78c3faf">OnMemoryWarning</link> (System.Object obj)</para>
+
+<para>OnMemoryWarning </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_evo_1_1_c_object_1a0884c27b5fddde62380e2d8b5d3342c3"/><section>
+    <title>OnDidStart()</title>
+<indexterm><primary>OnDidStart</primary><secondary>Evo.CObject</secondary></indexterm>
+<indexterm><primary>Evo.CObject</primary><secondary>OnDidStart</secondary></indexterm>
+<para><computeroutput>override void Evo.CObject.OnDidStart (System.Object obj)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>OnDidStart </para>
+</para>
+<para>
+Reimplemented from <link linkend="_class_evo_1_1_evo_object_1a1a83b81c8c69206aa7e1bc3078530e86">Evo.EvoObject</link>.</para>
+</section>
+<anchor xml:id="_class_evo_1_1_c_object_1a431bce615a9c6642f35337c28e4a013b"/><section>
+    <title>OnDidStop()</title>
+<indexterm><primary>OnDidStop</primary><secondary>Evo.CObject</secondary></indexterm>
+<indexterm><primary>Evo.CObject</primary><secondary>OnDidStop</secondary></indexterm>
+<para><computeroutput>override void Evo.CObject.OnDidStop (System.Object obj)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>OnDidStop </para>
+</para>
+<para>
+Reimplemented from <link linkend="_class_evo_1_1_evo_object_1af679e6ab1bea7e68c924e98e0750255b">Evo.EvoObject</link>.</para>
+</section>
+<anchor xml:id="_class_evo_1_1_c_object_1ad04805ec0e53aa5dc26747ccb78c3faf"/><section>
+    <title>OnMemoryWarning()</title>
+<indexterm><primary>OnMemoryWarning</primary><secondary>Evo.CObject</secondary></indexterm>
+<indexterm><primary>Evo.CObject</primary><secondary>OnMemoryWarning</secondary></indexterm>
+<para><computeroutput>override void Evo.CObject.OnMemoryWarning (System.Object obj)<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>OnMemoryWarning </para>
+</para>
+<para>
+Reimplemented from <link linkend="_class_evo_1_1_evo_object_1aad886b5d0bd621fd5b07319bc4d9f179">Evo.EvoObject</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__c_object_8cs">CObject.cs</link></section>
+</section>

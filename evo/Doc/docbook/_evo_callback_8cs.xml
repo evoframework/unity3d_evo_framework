@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__evo_callback_8cs" xml:lang="en-US">
+<title>EvoCallback.cs File Reference</title>
+<indexterm><primary>EvoCallback.cs</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_evo">Evo</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>delegate void <link linkend="_namespace_evo_1af7f2049d31ba22e4f6fe863e2e893caa">Evo.EvoCallback</link> ()</para>
+</listitem>
+            <listitem><para>delegate void <link linkend="_namespace_evo_1a05f2c1b955671377e1b9de2477e455de">Evo.EvoCallback&lt; T &gt;</link> (T arg1)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

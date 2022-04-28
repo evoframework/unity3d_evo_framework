@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_b6f3cff309d9339efc54274ca541c0cb" xml:lang="en-US">
+<title>core Directory Reference</title>
+<indexterm><primary>core Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_2d5d1b62bd979778f57495113a2ed1fa">evo_core_binary</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_23bf9142394cd75e95ee215158169e2e">evo_core_convert</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_72809d0d65d5b82b84b51089725a34fd">evo_core_crypt</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_5e5cceb31701dd7678fbd49bae675c98">evo_core_file</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_eec100e2e9ea199e5e41efe8c037a0f3">evo_core_key</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_199e02243e17046bc95eb4a3c89e63b0">evo_core_log</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_d6e3b9cf8ca07934161ac4da5580445f">evo_core_lz4</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_eccd50fa21a5e2cc7d57038d158b5c87">evo_core_message</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_2feefaa3fc8e1d87597fe29e14ca6dce">evo_core_reflection</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_8bf56481ef8b244cbcbf477d380ac16a">evo_core_serialize</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_2614d7f1c8aaa61253420e5225153c8d">evo_core_timespan</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_e740287a312482e64ecda822c5794438">evo_core_type</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

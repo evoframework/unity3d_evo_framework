@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_evo_1_1_u_object" xml:lang="en-US">
+<title>Evo.UObject Class Reference</title>
+<indexterm><primary>Evo.UObject</primary></indexterm>
+Inheritance diagram for Evo.UObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_u_object__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Evo.UObject:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_u_object__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_evo_1_1_u_object_1a09cb25e35e84e85e2d9a6c05b7901c12">UObject</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_evo_1_1_id">Evo.Id</link> <link linkend="_class_evo_1_1_u_object_1a76c9d1ff1e159813ec77470a82d0f9b5">iD</link><computeroutput> [getset]</computeroutput>
+</para>
+
+<para><link linkend="_struct_evo_1_1_id">Id</link> </para>
+</listitem>
+            <listitem><para><link linkend="_struct_evo_1_1_time">Evo.Time</link> <link linkend="_class_evo_1_1_u_object_1af6f4e718541e591a9071e752f873e7c9">time</link><computeroutput> [getset]</computeroutput>
+</para>
+
+<para><link linkend="_struct_evo_1_1_time">Time</link> </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_evo_1_1_u_object_1a09cb25e35e84e85e2d9a6c05b7901c12"/><section>
+    <title>UObject()</title>
+<indexterm><primary>UObject</primary><secondary>Evo.UObject</secondary></indexterm>
+<indexterm><primary>Evo.UObject</primary><secondary>UObject</secondary></indexterm>
+<para><computeroutput>Evo.UObject.UObject ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_evo_1_1_u_object_1a76c9d1ff1e159813ec77470a82d0f9b5"/><section>
+    <title>iD</title>
+<indexterm><primary>iD</primary><secondary>Evo.UObject</secondary></indexterm>
+<indexterm><primary>Evo.UObject</primary><secondary>iD</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_evo_1_1_id">Evo.Id</link> Evo.UObject.iD<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_struct_evo_1_1_id">Id</link> </para>
+</para>
+</section>
+<anchor xml:id="_class_evo_1_1_u_object_1af6f4e718541e591a9071e752f873e7c9"/><section>
+    <title>time</title>
+<indexterm><primary>time</primary><secondary>Evo.UObject</secondary></indexterm>
+<indexterm><primary>Evo.UObject</primary><secondary>time</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_evo_1_1_time">Evo.Time</link> Evo.UObject.time<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_struct_evo_1_1_time">Time</link> </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__u_object_8cs">UObject.cs</link></section>
+</section>

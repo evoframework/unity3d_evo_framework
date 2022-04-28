@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_evo_1_1_e_object_i_class" xml:lang="en-US">
+<title>Evo.EObjectIClass Class Reference</title>
+<indexterm><primary>Evo.EObjectIClass</primary></indexterm>
+Inheritance diagram for Evo.EObjectIClass:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_e_object_i_class__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Evo.EObjectIClass:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_e_object_i_class__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_evo_1_1_e_object_i_class_1a613b1e7a9acea7d3ae9518993ebedf45">name</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_evo_1_1_map">Map</link> <link linkend="_class_evo_1_1_e_object_i_class_1ae1a76e0fbefd7c24b46f7b94f348f840">mapEObjectIProperty</link> = new <link linkend="_class_evo_1_1_map">Map</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_evo_1_1_map">Map</link> <link linkend="_class_evo_1_1_e_object_i_class_1adb7ee2e04839b96613b59f1aa7256a8a">mapEObjectIMethod</link> = new <link linkend="_class_evo_1_1_map">Map</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_class_evo_1_1_map">Map</link> <link linkend="_class_evo_1_1_e_object_i_class_1a61af78659d3d90672461bd360749253c">mapEObjectIEvent</link> = new <link linkend="_class_evo_1_1_map">Map</link>()</para>
+</listitem>
+            <listitem><para>Type <link linkend="_class_evo_1_1_e_object_i_class_1a04a29358331706dff113fc399717b3f8">type</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_evo_1_1_e_object_i_class_1a3211267f7df3bb9a4c5e58d92a793c0b">typeEvo</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_evo_1_1_e_object_i_class_1abd6ad8ae8592464c3683bbb880942153">isSelected</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_evo_1_1_e_object_i_class_1a5fbda4d5c1dbade3c2849cbeb26aac46">gType</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static string <link linkend="_class_evo_1_1_e_object_i_class_1aa503ad6985484ee9b2d4e73774972883">TYPE_GEOBJECT</link> = &quot;GEObjectI&quot;</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_evo_1_1_e_object_i_class_1a43aa3c9c4144c5d4946695d6405c45e7">TYPE_EOBJECT</link> = &quot;EObjectI&quot;</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_evo_1_1_e_object_i_class_1a8f9b825c2902757098cac9a608cb507a">TYPE_COBJECT</link> = &quot;CObject&quot;</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_evo_1_1_e_object_i_class_1a6b43e39bc0e30109a4de3aa08780b3e9">TYPE_GOBJECT</link> = &quot;GObject&quot;</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_evo_1_1_e_object_i_class_1a1349abe60e5759dd88c7633cadcb9499">TYPE_UOBJECT</link> = &quot;UObject&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_evo_1_1_id">Evo.Id</link> <link linkend="_class_evo_1_1_e_object_i_class_1a56120962997a61b7918b39135f8c1e94">iD</link><computeroutput> [getset]</computeroutput>
+</para>
+
+<para><link linkend="_struct_evo_1_1_id">Id</link> </para>
+</listitem>
+            <listitem><para><link linkend="_struct_evo_1_1_time">Evo.Time</link> <link linkend="_class_evo_1_1_e_object_i_class_1a8db682627613cf6f3d11be8e573d15aa">time</link><computeroutput> [getset]</computeroutput>
+</para>
+
+<para><link linkend="_struct_evo_1_1_time">Time</link> </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_evo_1_1_e_object_i_class_1af1b3476c60c73025bd07def5eec7250a">baseClass</link><computeroutput> [getset]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1a5fbda4d5c1dbade3c2849cbeb26aac46"/><section>
+    <title>gType</title>
+<indexterm><primary>gType</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>gType</secondary></indexterm>
+<para><computeroutput>int Evo.EObjectIClass.gType</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1abd6ad8ae8592464c3683bbb880942153"/><section>
+    <title>isSelected</title>
+<indexterm><primary>isSelected</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>isSelected</secondary></indexterm>
+<para><computeroutput>bool Evo.EObjectIClass.isSelected</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1a61af78659d3d90672461bd360749253c"/><section>
+    <title>mapEObjectIEvent</title>
+<indexterm><primary>mapEObjectIEvent</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>mapEObjectIEvent</secondary></indexterm>
+<para><computeroutput><link linkend="_class_evo_1_1_map">Map</link> Evo.EObjectIClass.mapEObjectIEvent = new <link linkend="_class_evo_1_1_map">Map</link>()</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1adb7ee2e04839b96613b59f1aa7256a8a"/><section>
+    <title>mapEObjectIMethod</title>
+<indexterm><primary>mapEObjectIMethod</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>mapEObjectIMethod</secondary></indexterm>
+<para><computeroutput><link linkend="_class_evo_1_1_map">Map</link> Evo.EObjectIClass.mapEObjectIMethod = new <link linkend="_class_evo_1_1_map">Map</link>()</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1ae1a76e0fbefd7c24b46f7b94f348f840"/><section>
+    <title>mapEObjectIProperty</title>
+<indexterm><primary>mapEObjectIProperty</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>mapEObjectIProperty</secondary></indexterm>
+<para><computeroutput><link linkend="_class_evo_1_1_map">Map</link> Evo.EObjectIClass.mapEObjectIProperty = new <link linkend="_class_evo_1_1_map">Map</link>()</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1a613b1e7a9acea7d3ae9518993ebedf45"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>string Evo.EObjectIClass.name</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1a04a29358331706dff113fc399717b3f8"/><section>
+    <title>type</title>
+<indexterm><primary>type</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>type</secondary></indexterm>
+<para><computeroutput>Type Evo.EObjectIClass.type</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1a8f9b825c2902757098cac9a608cb507a"/><section>
+    <title>TYPE_COBJECT</title>
+<indexterm><primary>TYPE_COBJECT</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>TYPE_COBJECT</secondary></indexterm>
+<para><computeroutput>string Evo.EObjectIClass.TYPE_COBJECT = &quot;CObject&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1a43aa3c9c4144c5d4946695d6405c45e7"/><section>
+    <title>TYPE_EOBJECT</title>
+<indexterm><primary>TYPE_EOBJECT</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>TYPE_EOBJECT</secondary></indexterm>
+<para><computeroutput>string Evo.EObjectIClass.TYPE_EOBJECT = &quot;EObjectI&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1aa503ad6985484ee9b2d4e73774972883"/><section>
+    <title>TYPE_GEOBJECT</title>
+<indexterm><primary>TYPE_GEOBJECT</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>TYPE_GEOBJECT</secondary></indexterm>
+<para><computeroutput>string Evo.EObjectIClass.TYPE_GEOBJECT = &quot;GEObjectI&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1a6b43e39bc0e30109a4de3aa08780b3e9"/><section>
+    <title>TYPE_GOBJECT</title>
+<indexterm><primary>TYPE_GOBJECT</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>TYPE_GOBJECT</secondary></indexterm>
+<para><computeroutput>string Evo.EObjectIClass.TYPE_GOBJECT = &quot;GObject&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1a1349abe60e5759dd88c7633cadcb9499"/><section>
+    <title>TYPE_UOBJECT</title>
+<indexterm><primary>TYPE_UOBJECT</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>TYPE_UOBJECT</secondary></indexterm>
+<para><computeroutput>string Evo.EObjectIClass.TYPE_UOBJECT = &quot;UObject&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1a3211267f7df3bb9a4c5e58d92a793c0b"/><section>
+    <title>typeEvo</title>
+<indexterm><primary>typeEvo</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>typeEvo</secondary></indexterm>
+<para><computeroutput>string Evo.EObjectIClass.typeEvo</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1af1b3476c60c73025bd07def5eec7250a"/><section>
+    <title>baseClass</title>
+<indexterm><primary>baseClass</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>baseClass</secondary></indexterm>
+<para><computeroutput>string Evo.EObjectIClass.baseClass<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1a56120962997a61b7918b39135f8c1e94"/><section>
+    <title>iD</title>
+<indexterm><primary>iD</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>iD</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_evo_1_1_id">Evo.Id</link> Evo.EObjectIClass.iD<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_struct_evo_1_1_id">Id</link> </para>
+</para>
+</section>
+<anchor xml:id="_class_evo_1_1_e_object_i_class_1a8db682627613cf6f3d11be8e573d15aa"/><section>
+    <title>time</title>
+<indexterm><primary>time</primary><secondary>Evo.EObjectIClass</secondary></indexterm>
+<indexterm><primary>Evo.EObjectIClass</primary><secondary>time</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_evo_1_1_time">Evo.Time</link> Evo.EObjectIClass.time<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_struct_evo_1_1_time">Time</link> </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__e_object_class_8cs">EObjectClass.cs</link></section>
+</section>

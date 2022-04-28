@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_evo_1_1_iu_crypt_sha" xml:lang="en-US">
+<title>Evo.IuCryptSha Class Reference</title>
+<indexterm><primary>Evo.IuCryptSha</primary></indexterm>
+Inheritance diagram for Evo.IuCryptSha:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_iu_crypt_sha__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Evo.IuCryptSha:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_iu_crypt_sha__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static string <link linkend="_class_evo_1_1_iu_crypt_sha_1a2e4924c481a2e4330ced47e45d3193cd">GenerateMd5</link> (string str)</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_evo_1_1_iu_crypt_sha_1af8154e39968661664427915ee1c1ba4e">GenerateSha1</link> (string str)</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_evo_1_1_iu_crypt_sha_1aa718faa64920ff663fd44f2bb031ed61">GenerateSha256</link> (string str)</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_evo_1_1_iu_crypt_sha_1ad53706755b4894f25c8c75f46f584795">GenerateSha256</link> (byte[] arrayByte)</para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_evo_1_1_iu_crypt_sha_1a398dda41f5b7d92375498ec4d1c5fdb2">GenerateSha512</link> (string str)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_evo_1_1_iu_crypt_sha_1a2e4924c481a2e4330ced47e45d3193cd"/><section>
+    <title>GenerateMd5()</title>
+<indexterm><primary>GenerateMd5</primary><secondary>Evo.IuCryptSha</secondary></indexterm>
+<indexterm><primary>Evo.IuCryptSha</primary><secondary>GenerateMd5</secondary></indexterm>
+<para><computeroutput>static string Evo.IuCryptSha.GenerateMd5 (string str)<computeroutput>[static]</computeroutput></computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_iu_crypt_sha_a2e4924c481a2e4330ced47e45d3193cd_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_evo_1_1_iu_crypt_sha_1af8154e39968661664427915ee1c1ba4e"/><section>
+    <title>GenerateSha1()</title>
+<indexterm><primary>GenerateSha1</primary><secondary>Evo.IuCryptSha</secondary></indexterm>
+<indexterm><primary>Evo.IuCryptSha</primary><secondary>GenerateSha1</secondary></indexterm>
+<para><computeroutput>static string Evo.IuCryptSha.GenerateSha1 (string str)<computeroutput>[static]</computeroutput></computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_iu_crypt_sha_af8154e39968661664427915ee1c1ba4e_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_evo_1_1_iu_crypt_sha_1ad53706755b4894f25c8c75f46f584795"/><section>
+    <title>GenerateSha256()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>GenerateSha256</primary><secondary>Evo.IuCryptSha</secondary></indexterm>
+<indexterm><primary>Evo.IuCryptSha</primary><secondary>GenerateSha256</secondary></indexterm>
+<para><computeroutput>static string Evo.IuCryptSha.GenerateSha256 (byte[] arrayByte)<computeroutput>[static]</computeroutput></computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_iu_crypt_sha_ad53706755b4894f25c8c75f46f584795_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_evo_1_1_iu_crypt_sha_1aa718faa64920ff663fd44f2bb031ed61"/><section>
+    <title>GenerateSha256()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>GenerateSha256</primary><secondary>Evo.IuCryptSha</secondary></indexterm>
+<indexterm><primary>Evo.IuCryptSha</primary><secondary>GenerateSha256</secondary></indexterm>
+<para><computeroutput>static string Evo.IuCryptSha.GenerateSha256 (string str)<computeroutput>[static]</computeroutput></computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_iu_crypt_sha_aa718faa64920ff663fd44f2bb031ed61_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_evo_1_1_iu_crypt_sha_1a398dda41f5b7d92375498ec4d1c5fdb2"/><section>
+    <title>GenerateSha512()</title>
+<indexterm><primary>GenerateSha512</primary><secondary>Evo.IuCryptSha</secondary></indexterm>
+<indexterm><primary>Evo.IuCryptSha</primary><secondary>GenerateSha512</secondary></indexterm>
+<para><computeroutput>static string Evo.IuCryptSha.GenerateSha512 (string str)<computeroutput>[static]</computeroutput></computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_iu_crypt_sha_a398dda41f5b7d92375498ec4d1c5fdb2_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__iu_crypt_sha_8cs">IuCryptSha.cs</link></section>
+</section>

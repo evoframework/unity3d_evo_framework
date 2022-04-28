@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_cb456649315cf780f42145aa57dcbd9b" xml:lang="en-US">
+<title>entity Directory Reference</title>
+<indexterm><primary>entity Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__e_error_8cs">EError.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__e_log_8cs">ELog.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enum_error_8cs">EnumError.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

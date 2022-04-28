@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_90f54bee754f3463f6401d25191aca0c" xml:lang="en-US">
+<title>utility Directory Reference</title>
+<indexterm><primary>utility Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__i_binary_8cs">IBinary.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__iu_binary_8cs">IuBinary.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__u_binary_8cs">UBinary.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

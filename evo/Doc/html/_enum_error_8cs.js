@@ -1,0 +1,36 @@
+var _enum_error_8cs =
+[
+    [ "EnumError", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99", [
+      [ "ERROR_NOT_FOUND_MAIN_CANVAS", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99afb9cd1b69ff4e9539fa285c780518576", null ],
+      [ "ERROR_NOT_VALID_IN_MESSAGE_FOUND", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99af3f147bf642f7a65f913fd1328720d10", null ],
+      [ "ERROR_NOT_VALID_OUT_MESSAGE_FOUND", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a369346a7521db7ebe50252f2f85ef013", null ],
+      [ "ERROR_NOT_VALID_IN_MESSAGE", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99ae951a7114c69824d6d1a3ac119980fb9", null ],
+      [ "ERROR_NOT_VALID_OUT_MESSAGE", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a826c1588d109c8576301a6deb22272a3", null ],
+      [ "ERROR_NOT_VALID_PROPERTY", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99acc2227510be4f4a0aa34e562c0f8d79c", null ],
+      [ "ERROR_NOT_VALID_MAP_KEY", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a2a2147e9e81577ad9e7cf0e7926ea569", null ],
+      [ "ERROR_NOT_VALID_EOBJECT", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a491e71aa5a85e7bf41db41e25c61f4f6", null ],
+      [ "ERROR_NOT_VALID_UNITY_OBJECT", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a0ec386acdc86e5a86eab8a8229797ed9", null ],
+      [ "ERROR_NOT_VALID_OBJECT", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a81e972ee0a7df10401c086de651bbd81", null ],
+      [ "ERROR_NOT_VALID_EOBJECT_ID", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a6d55225baaa1ff27111fb9de84930766", null ],
+      [ "ERROR_NOT_VALID_EOBJECT_TIME", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a322bb73cd5981416c23f6e5852256a67", null ],
+      [ "ERROR_NOT_VALID_ECLASS", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a7846059aea778ed2d63ec2bfe80a984f", null ],
+      [ "ERROR_NOT_VALID_EMESSAGE", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99af67b2308d2703e2c894049765e6b19d5", null ],
+      [ "ERROR_NOT_VALID_EMESSAGE_MESSAGE", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a6fd84168230f396bef4794e57a0ad224", null ],
+      [ "ERROR_NOT_VALID_TYPE", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99af5c017cda2f64479147dc427a7eed154", null ],
+      [ "ERROR_NOT_VALID_MAP", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a3bf6c918d77f0d3237dffb85a8af7265", null ],
+      [ "ERROR_NOT_FOUND_EMESSAGE_PARAMETER_TYPE", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a08452eb628eaa0aefd5489a66b484298", null ],
+      [ "ERROR_NOT_VALID_EVENT", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99ab8629610542a83a677c066dd7e107c14", null ],
+      [ "ERROR_NOT_VALID_EVENT_PARENT", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a70e20b206f8dd9ce64dbb3ba6304e01f", null ],
+      [ "ERROR_NOT_VALID_RESOURCE", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99ae033456c10a22c03738c0ce22ce07a5c", null ],
+      [ "ERROR_NOT_VALID_GPPROPERTY", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a6b937e29871b0bbb4f81dc6002bbc90a", null ],
+      [ "ERROR_NOT_VALID_GOBJECT", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99ab64e31d671f7d9572e68ca6225b51a67", null ],
+      [ "ERROR_NOT_FIND_ESERVER", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a6ef2a2b27b441acd7706db234a583366", null ],
+      [ "ERROR_NOT_FIND_ECLIENT", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a2ddae3988c46298cdfc63cfc5f27c419", null ],
+      [ "ERROR_PINNING_NOT_VALID_ID_ESERVER_REMOTE", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99aab6f0bd24c4af9bc9aebaae61768edd1", null ],
+      [ "ERROR_PINNING_NOT_VALID_RSA_ESERVER_REMOTE", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a78015fac80448d6eda7e170e3f9c29e9", null ],
+      [ "TYPE_ALERT_DEBUG", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99a437fe162bfb4f3de4501596c0d9e562d", null ],
+      [ "TYPE_ALERT_WARNING", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99af2a3c37ccb987c645269b726a801a944", null ],
+      [ "TYPE_ALERT_ERROR", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99abaf2d5c5f70ca7effe437b6bcda1bfb3", null ],
+      [ "TYPE_ALERT_SUCCESS", "_enum_error_8cs.html#ac6e6b2de04801fdf0ff8142059f5ab99aa63df3eeebfc3220fd4d9b54260ea763", null ]
+    ] ]
+];

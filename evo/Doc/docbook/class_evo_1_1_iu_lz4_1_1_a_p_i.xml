@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_evo_1_1_iu_lz4_1_1_a_p_i" xml:lang="en-US">
+<title>Evo.IuLz4.API Class Reference</title>
+<indexterm><primary>Evo.IuLz4.API</primary></indexterm>
+Collaboration diagram for Evo.IuLz4.API:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_evo_1_1_iu_lz4_1_1_a_p_i__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static int <link linkend="_class_evo_1_1_iu_lz4_1_1_a_p_i_1ad6b0e2ef5fb8d62bf57482c7424fce81">Unity_LZ4_compress</link> (IntPtr src, int srcSize, IntPtr dst, int dstCapacity, int compressionLevel)</para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_evo_1_1_iu_lz4_1_1_a_p_i_1a3001eeab8edb6a8e37bff7c9e6cae412">Unity_LZ4_compressSize</link> (int srcSize, int compressionLevel)</para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_evo_1_1_iu_lz4_1_1_a_p_i_1a2cbee6e0416c87b9ca0561feb6cf45bb">Unity_LZ4_uncompressSize</link> (IntPtr srcBuffer, int srcSize)</para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_evo_1_1_iu_lz4_1_1_a_p_i_1ad106a768149d20e5be367a80975438f5">Unity_LZ4_decompress</link> (IntPtr src, int srcSize, IntPtr dst, int dstCapacity)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_evo_1_1_iu_lz4_1_1_a_p_i_1ad6b0e2ef5fb8d62bf57482c7424fce81"/><section>
+    <title>Unity_LZ4_compress()</title>
+<indexterm><primary>Unity_LZ4_compress</primary><secondary>Evo.IuLz4.API</secondary></indexterm>
+<indexterm><primary>Evo.IuLz4.API</primary><secondary>Unity_LZ4_compress</secondary></indexterm>
+<para><computeroutput>static int Evo.IuLz4.API.Unity_LZ4_compress (IntPtr src, int srcSize, IntPtr dst, int dstCapacity, int compressionLevel)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_iu_lz4_1_1_a_p_i_1a3001eeab8edb6a8e37bff7c9e6cae412"/><section>
+    <title>Unity_LZ4_compressSize()</title>
+<indexterm><primary>Unity_LZ4_compressSize</primary><secondary>Evo.IuLz4.API</secondary></indexterm>
+<indexterm><primary>Evo.IuLz4.API</primary><secondary>Unity_LZ4_compressSize</secondary></indexterm>
+<para><computeroutput>static int Evo.IuLz4.API.Unity_LZ4_compressSize (int srcSize, int compressionLevel)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_iu_lz4_1_1_a_p_i_1ad106a768149d20e5be367a80975438f5"/><section>
+    <title>Unity_LZ4_decompress()</title>
+<indexterm><primary>Unity_LZ4_decompress</primary><secondary>Evo.IuLz4.API</secondary></indexterm>
+<indexterm><primary>Evo.IuLz4.API</primary><secondary>Unity_LZ4_decompress</secondary></indexterm>
+<para><computeroutput>static int Evo.IuLz4.API.Unity_LZ4_decompress (IntPtr src, int srcSize, IntPtr dst, int dstCapacity)</computeroutput></para></section>
+<anchor xml:id="_class_evo_1_1_iu_lz4_1_1_a_p_i_1a2cbee6e0416c87b9ca0561feb6cf45bb"/><section>
+    <title>Unity_LZ4_uncompressSize()</title>
+<indexterm><primary>Unity_LZ4_uncompressSize</primary><secondary>Evo.IuLz4.API</secondary></indexterm>
+<indexterm><primary>Evo.IuLz4.API</primary><secondary>Unity_LZ4_uncompressSize</secondary></indexterm>
+<para><computeroutput>static int Evo.IuLz4.API.Unity_LZ4_uncompressSize (IntPtr srcBuffer, int srcSize)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__iu_lz4_8cs">IuLz4.cs</link></section>
+</section>

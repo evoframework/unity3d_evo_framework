@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__e_message_struct_8cs" xml:lang="en-US">
+<title>EMessageStruct.cs File Reference</title>
+<indexterm><primary>EMessageStruct.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_evo_1_1_e_message_struct">Evo.EMessageStruct</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_evo">Evo</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_evo_1aeee3092110ef85718d2ab74a0afaec8a">Evo.SServicePlugin</link> : int { 
+<link linkend="_namespace_evo_1aeee3092110ef85718d2ab74a0afaec8aa703c2f84014448b58186462defe3800e">Evo.ssOnSms</link> = 0
+, <link linkend="_namespace_evo_1aeee3092110ef85718d2ab74a0afaec8aa63e44203dac1c7d22f844c98293c71ac">Evo.ssOnFingerprint</link> = 1
+, <link linkend="_namespace_evo_1aeee3092110ef85718d2ab74a0afaec8aa73b412de040dff1c2be2b1d28eca68cb">Evo.ssOnSay</link> = 2
+, <link linkend="_namespace_evo_1aeee3092110ef85718d2ab74a0afaec8aa71d6789cba570749b6c4f5f00f2a39c1">Evo.ssOnInitContact</link> = 3
+, 
+<link linkend="_namespace_evo_1aeee3092110ef85718d2ab74a0afaec8aab5d89ec31381ad982a22436b6af59937">Evo.ssOnShareFile</link> = 4
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_30047cced76379998a601f3149688114" xml:lang="en-US">
+<title>entity Directory Reference</title>
+<indexterm><primary>entity Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__e_file_8cs">EFile.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__e_foundation_list_8cs">EFoundationList.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__e_query_8cs">EQuery.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__s_foundation_line_8cs">SFoundationLine.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

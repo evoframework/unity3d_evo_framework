@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_evo_1_1_e_message_struct" xml:lang="en-US">
+<title>Evo.EMessageStruct Struct Reference</title>
+<indexterm><primary>Evo.EMessageStruct</primary></indexterm>
+Collaboration diagram for Evo.EMessageStruct:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_evo_1_1_e_message_struct__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_struct_evo_1_1_e_message_struct_1a783c91897ab19b9d2f7e94bf7748f310">result</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_evo_1_1_e_message_struct_1ade9a545a6921ec7b8326153834851fd2">parameter</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_evo_1_1_e_message_struct_1afccbb96e2462e623bc0b71e5fe18bd03">parameterSize</link></para>
+</listitem>
+            <listitem><para>UInt32 <link linkend="_struct_evo_1_1_e_message_struct_1a1d869603810072b3b03e3612b164fbfc">lenghtData</link></para>
+</listitem>
+            <listitem><para>IntPtr <link linkend="_struct_evo_1_1_e_message_struct_1ab4d60e7482b70683014b3ab5f9c2ddbd">parameterData</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_evo_1_1_e_message_struct_1a1d869603810072b3b03e3612b164fbfc"/><section>
+    <title>lenghtData</title>
+<indexterm><primary>lenghtData</primary><secondary>Evo.EMessageStruct</secondary></indexterm>
+<indexterm><primary>Evo.EMessageStruct</primary><secondary>lenghtData</secondary></indexterm>
+<para><computeroutput>UInt32 Evo.EMessageStruct.lenghtData</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_message_struct_1ade9a545a6921ec7b8326153834851fd2"/><section>
+    <title>parameter</title>
+<indexterm><primary>parameter</primary><secondary>Evo.EMessageStruct</secondary></indexterm>
+<indexterm><primary>Evo.EMessageStruct</primary><secondary>parameter</secondary></indexterm>
+<para><computeroutput>IntPtr Evo.EMessageStruct.parameter</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_message_struct_1ab4d60e7482b70683014b3ab5f9c2ddbd"/><section>
+    <title>parameterData</title>
+<indexterm><primary>parameterData</primary><secondary>Evo.EMessageStruct</secondary></indexterm>
+<indexterm><primary>Evo.EMessageStruct</primary><secondary>parameterData</secondary></indexterm>
+<para><computeroutput>IntPtr Evo.EMessageStruct.parameterData</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_message_struct_1afccbb96e2462e623bc0b71e5fe18bd03"/><section>
+    <title>parameterSize</title>
+<indexterm><primary>parameterSize</primary><secondary>Evo.EMessageStruct</secondary></indexterm>
+<indexterm><primary>Evo.EMessageStruct</primary><secondary>parameterSize</secondary></indexterm>
+<para><computeroutput>int Evo.EMessageStruct.parameterSize</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_message_struct_1a783c91897ab19b9d2f7e94bf7748f310"/><section>
+    <title>result</title>
+<indexterm><primary>result</primary><secondary>Evo.EMessageStruct</secondary></indexterm>
+<indexterm><primary>Evo.EMessageStruct</primary><secondary>result</secondary></indexterm>
+<para><computeroutput>int Evo.EMessageStruct.result</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+<link linkend="__e_message_struct_8cs">EMessageStruct.cs</link></section>
+</section>

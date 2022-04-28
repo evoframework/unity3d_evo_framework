@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_evo_1_1_e_query" xml:lang="en-US">
+<title>Evo.EQuery Struct Reference</title>
+<indexterm><primary>Evo.EQuery</primary></indexterm>
+Inheritance diagram for Evo.EQuery:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_evo_1_1_e_query__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Evo.EQuery:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="struct_evo_1_1_e_query__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>System.Type <link linkend="_struct_evo_1_1_e_query_1af05344ca7d1db0b58666993f4647cd79">queryType</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_evo_1a24e6637089793db82451f3983aaaafc3">FoundationEnum</link> <link linkend="_struct_evo_1_1_e_query_1a0557df544006434ba340372130eeadab">foundationEnum</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_struct_evo_1_1_e_query_1ade59b77c4bd074e98b2696507635c945">queryId</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_struct_evo_1_1_e_query_1a9acaed42e9819a66c71af9269716432f">orderByChild</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_evo_1_1_e_query_1a6afacb5fb1d1fa9448cd32de11f684b8">limit</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_evo_1_1_e_query_1a975628a4bdee8a3153ea8ade14454fda">isCrypt</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_evo_1_1_e_query_1a76fe7d3cbb00ef8bbeb55b19449e3b9a">isMediator</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_evo_1a8b986df15f68db69ed597c4c1f0c7025">EnumSort</link> <link linkend="_struct_evo_1_1_e_query_1a978457ef072b69e7cb48d5bf97961e67">sort</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_evo_1_1_e_query_1ae23f0d4c0425c2d6610e8efe4eda3d79">isFoundation</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_evo_1_1_e_object">EObject</link> <link linkend="_struct_evo_1_1_e_query_1a694188b3dc348647b2e416be5de50d4a">eObject</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_evo_1_1_e_object">EObject</link> <link linkend="_struct_evo_1_1_e_query_1a6dd90cf1f1499f8487a55e7ed45674b4">eLog</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_struct_evo_1_1_e_query_1a9541509999ffee3adaf5fa904dbb2083">query</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_struct_evo_1_1_e_query_1adbaf9527f46c6cc545517b96ef5b89ed">sender</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_struct_evo_1_1_e_query_1a978946567341e8e5bfc18233ece13b5b">to</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_struct_evo_1_1_e_query_1a83ee24d8af856a99ed9591d612de3c2e">messageBack</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_evo_1_1_e_query_1a1792f748b75f3de6749257f212e3a11b">isOnValue</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_evo_1_1_e_query_1afdade9d0d5fefd568e7a7c684deb0932">isOnChildAdded</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_evo_1_1_e_query_1ad721a5b026e5d55401e81144563af9d5">isOnChildChanged</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_evo_1_1_e_query_1a9030e643fc32c193e737d6c19beecd0a">isOnChildRemoved</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_evo_1_1_e_query_1a936fcdfc96a3d32613343ff78d0fa728">isOnChildMoved</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespace_evo_1af7f2049d31ba22e4f6fe863e2e893caa">EvoCallback</link>&lt; System.Object &gt; <link linkend="_struct_evo_1_1_e_query_1a1ef7c9ac5b4dc0e5b4fb4684ae2d0582">evoCallback</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_evo_1_1_id">Id</link> <link linkend="_struct_evo_1_1_e_query_1a9afd96bdf85a69ea6c7304a4cf3ff05e">iD</link><computeroutput> [getset]</computeroutput>
+</para>
+
+<para><link linkend="_struct_evo_1_1_id">Id</link> </para>
+</listitem>
+            <listitem><para><link linkend="_struct_evo_1_1_time">Time</link> <link linkend="_struct_evo_1_1_e_query_1a593fd7c35a092eae6f725c9c91f8dd4c">time</link><computeroutput> [getset]</computeroutput>
+</para>
+
+<para><link linkend="_struct_evo_1_1_time">Time</link> </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_evo_1_1_e_query_1a6dd90cf1f1499f8487a55e7ed45674b4"/><section>
+    <title>eLog</title>
+<indexterm><primary>eLog</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>eLog</secondary></indexterm>
+<para><computeroutput><link linkend="_class_evo_1_1_e_object">EObject</link> Evo.EQuery.eLog</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a694188b3dc348647b2e416be5de50d4a"/><section>
+    <title>eObject</title>
+<indexterm><primary>eObject</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>eObject</secondary></indexterm>
+<para><computeroutput><link linkend="_class_evo_1_1_e_object">EObject</link> Evo.EQuery.eObject</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a1ef7c9ac5b4dc0e5b4fb4684ae2d0582"/><section>
+    <title>evoCallback</title>
+<indexterm><primary>evoCallback</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>evoCallback</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_evo_1af7f2049d31ba22e4f6fe863e2e893caa">EvoCallback</link>&lt;System.Object&gt; Evo.EQuery.evoCallback</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a0557df544006434ba340372130eeadab"/><section>
+    <title>foundationEnum</title>
+<indexterm><primary>foundationEnum</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>foundationEnum</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_evo_1a24e6637089793db82451f3983aaaafc3">FoundationEnum</link> Evo.EQuery.foundationEnum</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a975628a4bdee8a3153ea8ade14454fda"/><section>
+    <title>isCrypt</title>
+<indexterm><primary>isCrypt</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>isCrypt</secondary></indexterm>
+<para><computeroutput>bool Evo.EQuery.isCrypt</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1ae23f0d4c0425c2d6610e8efe4eda3d79"/><section>
+    <title>isFoundation</title>
+<indexterm><primary>isFoundation</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>isFoundation</secondary></indexterm>
+<para><computeroutput>bool Evo.EQuery.isFoundation</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a76fe7d3cbb00ef8bbeb55b19449e3b9a"/><section>
+    <title>isMediator</title>
+<indexterm><primary>isMediator</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>isMediator</secondary></indexterm>
+<para><computeroutput>bool Evo.EQuery.isMediator</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1afdade9d0d5fefd568e7a7c684deb0932"/><section>
+    <title>isOnChildAdded</title>
+<indexterm><primary>isOnChildAdded</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>isOnChildAdded</secondary></indexterm>
+<para><computeroutput>bool Evo.EQuery.isOnChildAdded</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1ad721a5b026e5d55401e81144563af9d5"/><section>
+    <title>isOnChildChanged</title>
+<indexterm><primary>isOnChildChanged</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>isOnChildChanged</secondary></indexterm>
+<para><computeroutput>bool Evo.EQuery.isOnChildChanged</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a936fcdfc96a3d32613343ff78d0fa728"/><section>
+    <title>isOnChildMoved</title>
+<indexterm><primary>isOnChildMoved</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>isOnChildMoved</secondary></indexterm>
+<para><computeroutput>bool Evo.EQuery.isOnChildMoved</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a9030e643fc32c193e737d6c19beecd0a"/><section>
+    <title>isOnChildRemoved</title>
+<indexterm><primary>isOnChildRemoved</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>isOnChildRemoved</secondary></indexterm>
+<para><computeroutput>bool Evo.EQuery.isOnChildRemoved</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a1792f748b75f3de6749257f212e3a11b"/><section>
+    <title>isOnValue</title>
+<indexterm><primary>isOnValue</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>isOnValue</secondary></indexterm>
+<para><computeroutput>bool Evo.EQuery.isOnValue</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a6afacb5fb1d1fa9448cd32de11f684b8"/><section>
+    <title>limit</title>
+<indexterm><primary>limit</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>limit</secondary></indexterm>
+<para><computeroutput>int Evo.EQuery.limit</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a83ee24d8af856a99ed9591d612de3c2e"/><section>
+    <title>messageBack</title>
+<indexterm><primary>messageBack</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>messageBack</secondary></indexterm>
+<para><computeroutput>string Evo.EQuery.messageBack</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a9acaed42e9819a66c71af9269716432f"/><section>
+    <title>orderByChild</title>
+<indexterm><primary>orderByChild</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>orderByChild</secondary></indexterm>
+<para><computeroutput>string Evo.EQuery.orderByChild</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a9541509999ffee3adaf5fa904dbb2083"/><section>
+    <title>query</title>
+<indexterm><primary>query</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>query</secondary></indexterm>
+<para><computeroutput>string Evo.EQuery.query</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1ade59b77c4bd074e98b2696507635c945"/><section>
+    <title>queryId</title>
+<indexterm><primary>queryId</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>queryId</secondary></indexterm>
+<para><computeroutput>string Evo.EQuery.queryId</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1af05344ca7d1db0b58666993f4647cd79"/><section>
+    <title>queryType</title>
+<indexterm><primary>queryType</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>queryType</secondary></indexterm>
+<para><computeroutput>System.Type Evo.EQuery.queryType</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1adbaf9527f46c6cc545517b96ef5b89ed"/><section>
+    <title>sender</title>
+<indexterm><primary>sender</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>sender</secondary></indexterm>
+<para><computeroutput>string Evo.EQuery.sender</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a978457ef072b69e7cb48d5bf97961e67"/><section>
+    <title>sort</title>
+<indexterm><primary>sort</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>sort</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_evo_1a8b986df15f68db69ed597c4c1f0c7025">EnumSort</link> Evo.EQuery.sort</computeroutput></para></section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a978946567341e8e5bfc18233ece13b5b"/><section>
+    <title>to</title>
+<indexterm><primary>to</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>to</secondary></indexterm>
+<para><computeroutput>string Evo.EQuery.to</computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_struct_evo_1_1_e_query_1a9afd96bdf85a69ea6c7304a4cf3ff05e"/><section>
+    <title>iD</title>
+<indexterm><primary>iD</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>iD</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_evo_1_1_id">Id</link> Evo.EQuery.iD<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_struct_evo_1_1_id">Id</link> </para>
+</para>
+</section>
+<anchor xml:id="_struct_evo_1_1_e_query_1a593fd7c35a092eae6f725c9c91f8dd4c"/><section>
+    <title>time</title>
+<indexterm><primary>time</primary><secondary>Evo.EQuery</secondary></indexterm>
+<indexterm><primary>Evo.EQuery</primary><secondary>time</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_evo_1_1_time">Time</link> Evo.EQuery.time<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_struct_evo_1_1_time">Time</link> </para>
+</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+<link linkend="__e_query_8cs">EQuery.cs</link></section>
+</section>
