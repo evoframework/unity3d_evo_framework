@@ -18,9 +18,20 @@ https://github.com/evoframework/unity3d_evo_framework.git
 * Click Add
 
 
+## Wiki:
+https://github.com/evoframework/unity3d_evo_framework/wiki
+
+
+## Doc:
+* docbook
+https://github.com/evoframework/unity3d_evo_framework/tree/main/evo/Doc/docbook
+* html
+https://github.com/evoframework/unity3d_evo_framework/tree/main/evo/Doc/html
+* latex:
+ https://github.com/evoframework/unity3d_evo_framework/tree/main/evo/Doc/latex
+
 ## License:
 Attribution-NonCommercial-ShareAlike 4.0 International
 
 https://github.com/evoframework/unity3d_evo_framework/blob/main/LICENSE
-
 ### Copyright: Massimiliano Pizzola
