@@ -5,9 +5,7 @@
 	"unity": "2021.1",
 	"author": "Evo",
 	"description": "Evo Framework for Unity3d",
-	"dependencies": {
-		"moxygen": "^0.8.0"
-	},
+	"dependencies": {},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/evoframework/unity3d_evo_framework.git"
