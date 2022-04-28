@@ -7,6 +7,9 @@ using System.Diagnostics;
 using System.IO;
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class EProcess : IEObject
     {
 

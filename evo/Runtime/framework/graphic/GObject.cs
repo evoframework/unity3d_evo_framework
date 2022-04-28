@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-
+using System;
 namespace Evo
 {
     [System.Serializable]
@@ -17,7 +17,7 @@ namespace Evo
         /// </summary>
         override public void OnDidStart(System.Object obj)
         {
-            this.Try(() =>
+            try
             {
                 if (isViewOnstart)
                 {
@@ -25,9 +25,13 @@ namespace Evo
                 }
                 else
                 {
-                 //   OnHide(obj);
+                    //   OnHide(obj);
                 }
-            });
+            }
+            catch (Exception exception)
+            {
+                this.DoException(exception);
+            }
         }
 
         /// <summary>
@@ -35,10 +39,14 @@ namespace Evo
         /// </summary>
         override public void OnDidStop(System.Object obj)
         {
-            this.Try(() =>
+            try
             {
                 OnHide(obj);
-            });
+            }
+            catch (Exception exception)
+            {
+                this.DoException(exception);
+            }
         }
 
         /// <summary>
@@ -46,10 +54,14 @@ namespace Evo
         /// </summary>
         virtual public void OnView(System.Object obj)
         {
-            this.Try(() =>
+            try
             {
                 gameObject.SetActive(true);
-            });
+            }
+            catch (Exception exception)
+            {
+                this.DoException(exception);
+            }
         }
 
         /// <summary>
@@ -57,10 +69,14 @@ namespace Evo
         /// </summary>
         virtual public void OnHide(System.Object obj)
         {
-            this.Try(() =>
+            try
             {
                 gameObject.SetActive(false);
-            });
+            }
+            catch (Exception exception)
+            {
+                this.DoException(exception);
+            }
         }
 
         /// <summary>

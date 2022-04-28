@@ -6,7 +6,9 @@ namespace Evo
 {
     public class IuCryptSha : UObject
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static string GenerateMd5(string str)
         {
             try
@@ -23,6 +25,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string GenerateSha1(string str)
         {
             try
@@ -41,6 +46,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string GenerateSha256(string str)
         {
             try
@@ -58,6 +66,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string GenerateSha256(byte[] arrayByte)
         {
             try
@@ -73,6 +84,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string GenerateSha512(string str)
         {
             try

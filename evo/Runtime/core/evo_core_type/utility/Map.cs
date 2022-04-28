@@ -8,6 +8,9 @@ using System.Linq;
 using System.IO;
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [System.Serializable]
     public class Map : Dictionary<Id, IEObject>
     {
@@ -34,11 +37,18 @@ namespace Evo
          }*/
 
         public string nameMap = "Map";
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Map()
         {
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Map Clone()
         {
             try
@@ -59,12 +69,17 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         virtual public string ToStringSimple()
         {
             return ToString();
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Contain(System.Object obj)
         {
             try
@@ -84,6 +99,9 @@ namespace Evo
             return false;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public T DoGet<T>(Id key) where T : IEObject
         {
             try
@@ -116,6 +134,9 @@ namespace Evo
 
          }*/
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoSet(System.Object obj)
         {
             try
@@ -140,7 +161,9 @@ namespace Evo
             }
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoSet(Id iD, IEObject eObject)
         {
             try
@@ -164,6 +187,9 @@ namespace Evo
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoDel(Id key)
         {
             try
@@ -183,7 +209,9 @@ namespace Evo
 
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoDel(System.Object obj)
         {
             try
@@ -205,6 +233,9 @@ namespace Evo
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         override public string ToString()
         {
             try

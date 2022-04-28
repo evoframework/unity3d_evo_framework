@@ -7,6 +7,9 @@ using System.Net;
 using System.Threading.Tasks;
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class IuLog
     {
 #if UNITY_EDITOR
@@ -16,15 +19,14 @@ namespace Evo
 #endif
 
         public static int countLog = 0;
-
-
         public static bool isProduction = false;
         public static bool isVerbose = true;
-
         public static string logSeparator = "\n-----------------------------------------------------\n";
-
         public static string logParamterSeparator = "\n.....................................................\n";
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void DoVerbose(this IEvo source, System.Object obj, System.Object parameter = null)
         {
             try
@@ -79,6 +81,9 @@ namespace Evo
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void DoLogNotify(this IEvo source, System.Object obj, System.Object parameter = null)
         {
             try
@@ -121,6 +126,9 @@ namespace Evo
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void DoDebug(this IEvo source, System.Object obj, System.Object parameter = null)
         {
             try
@@ -163,6 +171,9 @@ namespace Evo
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void DoWarning(this IEvo source, System.Object obj, System.Object parameter = null)
         {
             try
@@ -204,6 +215,9 @@ namespace Evo
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void DoError(this IEvo source, System.Object obj, System.Object parameter = null)
         {
 
@@ -246,6 +260,9 @@ namespace Evo
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void DoException(this IEvo source, Exception exception)
         {
             try

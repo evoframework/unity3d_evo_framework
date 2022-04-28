@@ -8,8 +8,14 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed class IuConvert : UObject
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public static byte[] FromHex(string hex)
         {
             try
@@ -34,6 +40,10 @@ namespace Evo
             }
             return null;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static int GetHexVal(char hex)
         {
             int val = (int)hex;
@@ -45,6 +55,9 @@ namespace Evo
             //return val - (val < 58 ? 48 : (val < 97 ? 55 : 87));
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string ToHex(byte[] arrayByte)
         {
             try
@@ -82,6 +95,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static bool toBool(System.Object obj)
         {
             try
@@ -107,6 +123,9 @@ namespace Evo
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static int toInt(System.Object obj)
         {
             try
@@ -123,6 +142,9 @@ namespace Evo
             return 0;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static float toFloat(System.Object obj)
         {
             try
@@ -140,6 +162,9 @@ namespace Evo
             return 0;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static long toLong(System.Object obj)
         {
             try
@@ -156,6 +181,9 @@ namespace Evo
             return 0;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static double toDouble(System.Object obj)
         {
             try
@@ -172,6 +200,9 @@ namespace Evo
             return 0;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string toString(System.Object obj)
         {
             try
@@ -188,6 +219,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static GUISkin toGuiSkin(System.Object obj)
         {
             try
@@ -205,6 +239,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static Rect toRect(System.Object obj)
         {
             try
@@ -232,6 +269,9 @@ namespace Evo
             return new Rect(0, 0, 0, 0);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static Resolution ToResolution(System.Object obj)
         {
             try
@@ -264,6 +304,9 @@ namespace Evo
             return new Resolution(); ;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static Rect toRectInverse(System.Object obj)
         {
             try
@@ -291,6 +334,9 @@ namespace Evo
             return new Rect(0, 0, 0, 0);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static Rect ToRectCanvas(Canvas canvas, System.Object obj)
         {
             try
@@ -320,7 +366,9 @@ namespace Evo
             return new Rect(0, 0, 0, 0);
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static Rect toRectForceInverse(System.Object obj)
         {
             try
@@ -348,6 +396,9 @@ namespace Evo
             return new Rect(0, 0, 0, 0);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static Vector2 ToVector2(System.Object obj)
         {
             try
@@ -375,6 +426,9 @@ namespace Evo
             return Vector2.zero;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static Vector3 ToVector3(System.Object obj)
         {
             try
@@ -402,6 +456,9 @@ namespace Evo
             return Vector2.zero;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string ToDecimal(System.Object obj)
         {
             try
@@ -421,7 +478,9 @@ namespace Evo
             return "";
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static float FromPercent(string str, float max)
         {
             try
@@ -440,6 +499,9 @@ namespace Evo
             return 0;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static float fromPercentWidth(System.Object obj)
         {
             try
@@ -462,6 +524,9 @@ namespace Evo
             return 0;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static float fromPercentHeight(System.Object obj)
         {
             try
@@ -484,6 +549,9 @@ namespace Evo
             return 0;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string ToBase64(byte[] arrayByte)
         {
             try
@@ -501,6 +569,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static byte[] FromBase64(string str)
         {
             try
@@ -515,6 +586,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static DateTime ToDateTime(string time)
         {
             try
@@ -551,6 +625,9 @@ namespace Evo
             return DateTime.UtcNow;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string ToElapsedTime(string timeStart, string timeEnd)
         {
             try
@@ -588,6 +665,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static byte[] ToByteArray(System.Object obj)
         {
             try
@@ -607,6 +687,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string ToUtf8String(byte[] arrayByte)
         {
             try
@@ -620,6 +703,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static byte[] ToUtf8ArrayByte(string str)
         {
             try
@@ -633,6 +719,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static System.Object FromByteArray(byte[] arrBytes)
         {
             try

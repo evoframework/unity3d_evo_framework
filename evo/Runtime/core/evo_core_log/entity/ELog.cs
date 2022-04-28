@@ -6,6 +6,9 @@ using System.Runtime.InteropServices;
 
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
     public unsafe struct ELog : IEObject
     {

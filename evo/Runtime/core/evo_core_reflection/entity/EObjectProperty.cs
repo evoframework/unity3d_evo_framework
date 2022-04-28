@@ -3,6 +3,9 @@ using System.Collections;
 using System;
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public enum EnumVisibilty
     {
         VISIBILITY_PUBLIC,
@@ -13,6 +16,9 @@ namespace Evo
         VISIBILITY_STATIC_PRIVATE
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class EObjectIProperty : IEObject
     {
 

@@ -2,6 +2,9 @@
 using System.IO;
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class TObject
     {
         public IEObject parent;

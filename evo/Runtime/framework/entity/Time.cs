@@ -12,7 +12,7 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public long time ;
+        public long time;
 
         public Time(long time)
         {

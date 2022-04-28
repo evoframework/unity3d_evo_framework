@@ -34,8 +34,5 @@ namespace Evo
         public string name;
 
         public Map mapConfig = new Map();
-
-
-
     }
 }

@@ -3,18 +3,29 @@ using System.Collections;
 using System.IO;
 using System.Threading;
 using System.Text;
+using UnityEngine.Networking;
+
 namespace Evo
 {
+	/// <summary>
+	/// 
+	/// </summary>
 	public class UFile : UObject
 	{
 
 		private static volatile UFile instance;
 
+		/// <summary>
+		/// 
+		/// </summary>
 		private UFile()
 		{
 
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public static UFile getInstance()
 		{
 			if (instance == null)
@@ -24,6 +35,9 @@ namespace Evo
 			return instance;
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public bool ExistFile(string pathFile)
 		{
 			try
@@ -39,6 +53,9 @@ namespace Evo
 			return false;
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public bool ExistDirectory(string pathFile)
 		{
 			try
@@ -54,6 +71,9 @@ namespace Evo
 			return false;
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public void CreateDirectory(string path)
 		{
 			try
@@ -76,6 +96,9 @@ namespace Evo
 			}
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public void DoDelFileInDirectory(string pathDirectory)
 		{
 			try
@@ -102,6 +125,9 @@ namespace Evo
 			}
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public void DoWrite(string pathFile, string text, bool append)
 		{
 			try
@@ -117,6 +143,9 @@ namespace Evo
 			}
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public void DoWrite(string pathFile, byte[] arrayByte, bool append)
 		{
 			try
@@ -139,46 +168,9 @@ namespace Evo
 			}
 		}
 
-		public string DoRead(string url)
-		{
-			try
-			{
-				WWW www = new WWW(url);
-				while (www.isDone == false && www.error == null)
-				{
-
-				}
-
-				if (www.error != null)
-				{
-					try
-					{
-						this.DoError(www.error);
-					}
-					catch (System.Exception e)
-					{
-						this.DoError(e);
-					}
-				}
-				else
-				{
-					try
-					{
-						return www.text;
-					}
-					catch (System.Exception e)
-					{
-						this.DoError(e);
-					}
-				}
-			}
-			catch (System.Exception e)
-			{
-				this.DoError(e);
-			}
-			return "";
-		}
-
+		/// <summary>
+		/// 
+		/// </summary>
 		public void DoDel(string url)
 		{
 			try
@@ -195,46 +187,9 @@ namespace Evo
 
 		}
 
-		public byte[] DoReadByteWWW(string url)
-		{
-			try
-			{
-				WWW www = new WWW(url);
-				while (www.isDone == false && www.error == null)
-				{
-
-				}
-
-				if (www.error != null)
-				{
-					try
-					{
-						this.DoError(www.error);
-					}
-					catch (System.Exception e)
-					{
-						this.DoError(e);
-					}
-				}
-				else
-				{
-					try
-					{
-						return www.bytes;
-					}
-					catch (System.Exception e)
-					{
-						this.DoError(e);
-					}
-				}
-			}
-			catch (System.Exception e)
-			{
-				this.DoError(e);
-			}
-			return null;
-		}
-
+		/// <summary>
+		/// 
+		/// </summary>
 		public byte[] DoReadByte(string url)
 		{
 			try
@@ -275,6 +230,9 @@ namespace Evo
 			return null;
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public byte[] DoReadFileStream(Stream fsSource)
 		{
 			try
@@ -317,6 +275,9 @@ namespace Evo
 			return null;
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public EFile DoReadEFile(string url)
 		{
 			try
@@ -382,38 +343,10 @@ namespace Evo
 			}
 			return null;
 		}
-		/*
-			public EFile DoReadEFileMemory (string url)
-			{
-					try {
-							EFile eFile = DoReadEFileProperty (url);
-							if (eFile != null) {
-									MemoryStream memoryStream = new MemoryStream ();
-
-					StreamWriter streamWriter = new StreamWriter(memoryStream);
-
-					FileStream fileStream = new FileStream(url, FileMode.Open, FileAccess.Read);
-					byte[] buffer = new byte[1024];
-					int bytesRead = 0;
-					while ((bytesRead = fileStream.Read(buffer, 0, buffer.Length)) != 0)
-					{
-						memoryStream.Write(buffer, 0, bytesRead);
-					}
-					memoryStream.Flush();
-					//streamWriter.Flush();
-					//streamWriter.Close();
-					fileStream.Close();
-
-					return eFile;
-				}
-
-
-					} catch (System.Exception e) {
-							DoError (e);
-					}
-					return null;
-			}*/
-
+		
+		/// <summary>
+		/// 
+		/// </summary>
 		public EFile DoReadEFileProperty(string url)
 		{
 			try
@@ -448,6 +381,9 @@ namespace Evo
 			return null;
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public string DoReadText(string path)
 		{
 			try
@@ -478,6 +414,9 @@ namespace Evo
 			return "";
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public void CopyAndReplaceDirectory(string srcPath, string dstPath)
 		{
 			try
@@ -511,6 +450,9 @@ namespace Evo
 			}
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public void CopyDirectory(string srcPath, string dstPath, bool overwrite)
 		{
 			try

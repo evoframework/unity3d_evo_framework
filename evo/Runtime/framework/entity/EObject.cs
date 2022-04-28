@@ -36,19 +36,27 @@ namespace Evo
 
         #endregion
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         virtual public void ToStream(System.IO.Stream stream)
         {
             this.DoWrite(iD, stream);
             this.DoWrite(time, stream);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         virtual public void FromStream(System.IO.Stream stream)
         {
             iD = this.DoReadId(stream);
             time = this.DoReadTime(stream);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public override string ToString()
         {
             return iD + "\n" + time;

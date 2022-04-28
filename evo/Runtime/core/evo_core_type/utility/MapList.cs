@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [System.Serializable]
     public class MapList<T> : IList<T> where T : IEObject
     {
@@ -14,6 +17,9 @@ namespace Evo
 
         #region Implementation of IEnumerable
 
+        /// <summary>
+        /// 
+        /// </summary>
         public IEnumerator<T> GetEnumerator()
         {
 
@@ -23,6 +29,9 @@ namespace Evo
             return listValue.GetEnumerator();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
@@ -32,6 +41,9 @@ namespace Evo
 
         #region Implementation of ICollection<T>
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void Add(T item)
         {
 
@@ -39,31 +51,49 @@ namespace Evo
             _list.Add(item.iD, item);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void Clear()
         {
             _list.Clear();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Contains(T item)
         {
             return _list.ContainsKey(item.iD);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void CopyTo(T[] array, int arrayIndex)
         {
             //_list.CopyTo(array, arrayIndex);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Remove(T item)
         {
             return _list.Remove(item.iD);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int Count
         {
             get { return _list.Count; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsReadOnly
         {
             get { return false; }//_list.IsReadOnly; }
@@ -74,30 +104,39 @@ namespace Evo
 
         #region Implementation of IList<T>
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int IndexOf(T item)
         {
             return -1;//_list.IndexOf(item);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void Insert(int index, T item)
         {
 
             _list.Add(new Id(index.ToString()), item);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void RemoveAt(int index)
         {
             _list.Remove(new Id(index.ToString()));
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public T this[int index]
         {
             get { return _list[new Id(index.ToString())]; }
             set { _list[new Id(index.ToString())] = value; }
-
-
         }
-
         #endregion
     }
 }

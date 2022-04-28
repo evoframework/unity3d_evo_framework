@@ -7,6 +7,9 @@ namespace Evo
 {
     public static class IuObject
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public static void Try(this IEvo source, Action action)
         {
             try
@@ -19,6 +22,9 @@ namespace Evo
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void Throw(this IEvo source, Action action)
         {
             try

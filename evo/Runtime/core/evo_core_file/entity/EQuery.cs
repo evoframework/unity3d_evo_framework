@@ -4,6 +4,9 @@ using System.Runtime.InteropServices;
 
 namespace Evo
 {
+	/// <summary>
+	/// 
+	/// </summary>
 	public enum FoundationEnum
 	{
 		Mediator_Only,
@@ -11,12 +14,18 @@ namespace Evo
 		Mediator_Foundation
 	}
 
+	/// <summary>
+	/// 
+	/// </summary>
 	public enum EnumSort
 	{
 		Ascending,
 		Descending
 	}
 
+	/// <summary>
+	/// 
+	/// </summary>
 	[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
 	public unsafe struct EQuery : IEObject
 	{

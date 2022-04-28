@@ -7,6 +7,9 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Collections;
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [StructLayout(LayoutKind.Sequential)]
     public struct EMessageStruct
     {
@@ -18,6 +21,9 @@ namespace Evo
         public IntPtr parameterData;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public enum SServicePlugin : int
     {
         ssOnSms = 0,

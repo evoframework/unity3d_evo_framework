@@ -5,6 +5,9 @@ using System.Collections;
 
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class UType : UObject
     {
         private static UType instance;
@@ -12,6 +15,9 @@ namespace Evo
         public string host;
         public Int32 port;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static UType getInstance()
         {
             if (instance == null)
@@ -21,10 +27,16 @@ namespace Evo
             return instance;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         private UType()
         {
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool isEObject(System.Object obj)
         {
             try
@@ -43,6 +55,9 @@ namespace Evo
             return false;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool isMap(System.Object obj)
         {
             try
@@ -60,6 +75,9 @@ namespace Evo
             return false;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool isArray(System.Object obj)
         {
             try

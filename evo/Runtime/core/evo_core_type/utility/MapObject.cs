@@ -8,6 +8,9 @@ using UnityEngine;
 
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [System.Serializable]
     public class MapObject<TValue> : Dictionary<string, TValue>//, ISerializationCallbackReceiver
     {
@@ -46,7 +49,9 @@ namespace Evo
             */
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoSet(string key, TValue value)
         {
             try
@@ -64,7 +69,7 @@ namespace Evo
             }
             catch (System.Exception e)
             {
-                //UObject.DoError (e);
+                Debug.LogException(e);
             }
 
         }
@@ -80,7 +85,9 @@ namespace Evo
             return default(K);
         }
     */
-
+        /// <summary>
+        /// 
+        /// </summary>
         public TValue DoGet(string key)
         {
             try
@@ -89,14 +96,16 @@ namespace Evo
             }
             catch (System.Exception e)
             {
-                //UObject.DoError (e);
+                Debug.LogException(e);
             }
 
             return default(TValue);
         }
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public T1 DoGet<T1>(string key) where T1 : TValue
         {
             try
@@ -105,31 +114,33 @@ namespace Evo
             }
             catch (System.Exception e)
             {
-                //UObject.DoError (e);
+                Debug.LogException(e);
             }
 
             return default(T1);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoDel(string key)
         {
             try
             {
-
                 if (ContainsKey(key))
                 {
                     this.Remove(key);
                 }
-
-
             }
             catch (System.Exception e)
             {
-                //UObject.DoError (e);
+                Debug.LogException(e);
             }
-
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void ToStream(Stream stream)
         {
 
@@ -145,6 +156,9 @@ namespace Evo
             //	writer.Flush();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void FromStream(Stream stream)
         {
             try

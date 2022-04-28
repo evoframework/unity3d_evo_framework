@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System;
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [System.Serializable]
     public class EObjectIClass : IEObject
     {

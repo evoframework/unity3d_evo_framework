@@ -2,6 +2,9 @@ using UnityEngine;
 using System.Collections;
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class EObjectIMethod : IEObject
     {
         #region IEvo

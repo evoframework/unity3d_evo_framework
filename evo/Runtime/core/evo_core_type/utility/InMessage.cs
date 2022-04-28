@@ -2,6 +2,9 @@
 using System.Collections;
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [System.Serializable]
     public class InMessage
     {
@@ -13,6 +16,9 @@ namespace Evo
         [System.NonSerialized]
         public EvoCallback<System.Object> evoCallback;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public InMessage(string iD, string name, EvoCallback<System.Object> evoCallback)
         {
             if (evoCallback != null)
@@ -21,17 +27,15 @@ namespace Evo
                 this.name = name;
                 this.evoCallback = evoCallback;
             }
-
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public override string ToString()
         {
             return name;
         }
-
-
-
     }
 
 }

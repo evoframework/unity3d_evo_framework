@@ -12,7 +12,7 @@ namespace Evo
     public abstract class EvoObject : MonoBehaviour, IEvo
     {
 
-        public static readonly string EVO_VERSION = "20211117";
+        public static readonly string EVO_VERSION = "20220429";
 
         public float timeDelay = 0.1f;
 
@@ -46,30 +46,35 @@ namespace Evo
         /// </summary>
         void OnEnable()
         {
-            this.Try(() =>
+            try
             {
-
                 iD = new Id(GetType().Name + "(" + GetInstanceID().ToString().Replace("-", "0") + ")");
-
                 OnDidEnable("OnEnable");
-
-            });
+            }
+            catch (Exception exception)
+            {
+                this.DoException(exception);
+            }
         }
 
         /// <summary>
         /// 
         /// </summary>
-        #pragma warning disable CS1998
+#pragma warning disable CS1998
         public async void Start()
-        #pragma warning restore CS1998
+#pragma warning restore CS1998
         {
-            this.Try(async () =>
+            try
             {
-                #if !UNITY_WEBGL
+#if !UNITY_WEBGL
                 await Task.Delay(TimeSpan.FromSeconds(timeDelay));
-                #endif
+#endif
                 OnDidStart(null);
-            });
+            }
+            catch (Exception exception)
+            {
+                this.DoException(exception);
+            }
         }
 
         /// <summary>
@@ -77,10 +82,14 @@ namespace Evo
         /// </summary>
         void OnDisable()
         {
-            this.Try(() =>
+            try
             {
                 OnDidStop("OnDestroy");
-            });
+            }
+            catch (Exception exception)
+            {
+                this.DoException(exception);
+            }
         }
 
         /// <summary>
@@ -119,55 +128,55 @@ namespace Evo
         {
         }
 
-        protected static List<Action> listActions = new List<Action>();
+        /// <summary>
+        /// 
+        /// </summary>
+        protected List<Action> listActions = new List<Action>();
 
-        public static void DoThreadAction(Action action)
+        /// <summary>
+        /// 
+        /// </summary>
+        public void DoThreadAction(Action action)
         {
             try
             {
-
-                {
-                    listActions.Add(action);
-                }
+                listActions.Add(action);
             }
             catch (Exception exception)
             {
-                Debug.LogException(exception);
+                this.DoException(exception);
             }
         }
-
-
+        /// <summary>
+        /// Every Fps
+        /// @todo:to move
+        /// </summary>
         void Update()
         {
             try
             {
-
                 if (listActions.Count != 0)
                 {
-
+                    var listActionsTmp = new List<Action>(listActions);
+                    foreach (var action in listActionsTmp)
                     {
-                        var listActionsTmp = new List<Action>(listActions);
-                        foreach (var action in listActionsTmp)
+                        try
                         {
-                            try
-                            {
-                                action();
-                            }
-                            catch (Exception exception)
-                            {
-                                Debug.LogException(exception);
-                            }
+                            action();
                         }
-
-                        listActions.Clear();
+                        catch (Exception exception)
+                        {
+                            this.DoException(exception);
+                        }
                     }
+
+                    listActions.Clear();
                 }
             }
             catch (Exception exception)
             {
-                Debug.LogException(exception);
+                this.DoException(exception);
             }
-
         }
     }
 }

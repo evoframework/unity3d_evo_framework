@@ -6,14 +6,25 @@ using System.Runtime.CompilerServices;
 
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class UBinary : UObject
     {
 
+   
         protected static UBinary instance;
+
+        /// <summary>
+        /// Singleton
+        /// </summary>
         private UBinary()
         {
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static UBinary Instance()
         {
             if (instance == null)
@@ -23,6 +34,9 @@ namespace Evo
             return instance;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(byte[] value, Stream stream)
         {
             if (value == null)
@@ -38,6 +52,10 @@ namespace Evo
                 stream.Flush();
             }
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(string value, Stream stream)
         {
             if (value == null)
@@ -54,6 +72,9 @@ namespace Evo
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string DoReadString(System.IO.Stream stream)
         {
             try
@@ -81,7 +102,9 @@ namespace Evo
             return null;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(Texture2D value, Stream stream)
         {
             if (value != null)
@@ -98,6 +121,9 @@ namespace Evo
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(Color value, Stream stream)
         {
             if (value != null)
@@ -115,6 +141,9 @@ namespace Evo
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(float value, Stream stream)
         {
 
@@ -123,12 +152,18 @@ namespace Evo
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(double value, Stream stream)
         {
             byte[] arrayByte = BitConverter.GetBytes(value);
             stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(bool value, Stream stream)
         {
             byte[] arrayByte = BitConverter.GetBytes(value);
@@ -136,6 +171,9 @@ namespace Evo
             stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(Int16 value, Stream stream)
         {
             // byte[] arrayByte = new byte[sizeof(Int16)];
@@ -145,6 +183,9 @@ namespace Evo
             stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(Int32 value, Stream stream)
         {
             // byte[] arrayByte = new byte[sizeof(Int32)]; //BitConverter.GetBytes(value);
@@ -154,6 +195,9 @@ namespace Evo
             stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(Int64 value, Stream stream)
         {
             //byte[] arrayByte = new byte[sizeof(Int64)];
@@ -164,6 +208,9 @@ namespace Evo
             stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(UInt16 value, Stream stream)
         {
             // byte[] arrayByte = new byte[sizeof(UInt16)];
@@ -173,6 +220,9 @@ namespace Evo
             stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(UInt32 value, Stream stream)
         {
             //byte[] arrayByte = new byte[sizeof(UInt32)];
@@ -182,6 +232,9 @@ namespace Evo
             stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(UInt64 value, Stream stream)
         {
             // byte[] arrayByte = new byte[sizeof(UInt64)];
@@ -191,11 +244,17 @@ namespace Evo
             stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(Id value, Stream stream)
         {
             DoWrite(value.iD, stream);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoRead(out Id iD, System.IO.Stream stream)
         {
 
@@ -205,13 +264,18 @@ namespace Evo
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(Time value, Stream stream)
         {
             byte[] arrayByte = BitConverter.GetBytes(value.time);
             stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(IBinary value, Stream stream)
         {
 
@@ -245,7 +309,7 @@ namespace Evo
             }
         }*/
 
-      
+
 
         /*
          * 
@@ -271,6 +335,9 @@ namespace Evo
             return eObject
         */
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(EObject eObject,System.IO.Stream stream)
         {
             try
@@ -327,6 +394,9 @@ namespace Evo
 
         }*/
 
+        /// <summary>
+        /// 
+        /// </summary>
         public T DoReadEObject<T>(System.IO.Stream stream) where T:EObject, new()
         {
             try
@@ -356,7 +426,9 @@ namespace Evo
 
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public T Instantiate<T>() where T:EObject
         {
             try
@@ -422,6 +494,9 @@ namespace Evo
             return null;
         }*/
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoWrite(Map value, Stream stream)
         {
 
@@ -495,6 +570,10 @@ namespace Evo
             return null;
         }
         */
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Map DoReadMap<T>(System.IO.Stream stream) where T:EObject,new ()
         {
             try
@@ -530,6 +609,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Id DoReadId(System.IO.Stream stream)
         {
             try
@@ -547,7 +629,9 @@ namespace Evo
         }
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public Time DoReadTime(System.IO.Stream stream)
         {
             try
@@ -563,6 +647,9 @@ namespace Evo
             return default;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Color DoReadColor(System.IO.Stream stream)
         {
             try
@@ -601,6 +688,9 @@ namespace Evo
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public byte[] DoReadByteArray(System.IO.Stream stream)
         {
             try
@@ -627,6 +717,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool DoReadBoolean(System.IO.Stream stream)
         {
             try
@@ -643,6 +736,9 @@ namespace Evo
             return false;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Texture2D DoReadTexture2D(System.IO.Stream stream)
         {
             try
@@ -673,6 +769,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public UInt16 DoReadUInt16(System.IO.Stream stream)
         {
             try
@@ -689,6 +788,9 @@ namespace Evo
             return default(UInt16);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public UInt32 DoReadUInt32(System.IO.Stream stream)
         {
             try
@@ -705,6 +807,9 @@ namespace Evo
             return default(UInt32);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public UInt64 DoReadUInt64(System.IO.Stream stream)
         {
             try
@@ -721,6 +826,9 @@ namespace Evo
             return default(UInt64);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Int16 DoReadInt16(System.IO.Stream stream)
         {
             try
@@ -737,6 +845,9 @@ namespace Evo
             return default(Int16);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int DoReadInt(System.IO.Stream stream)
         {
 
@@ -754,8 +865,9 @@ namespace Evo
             return default(int);
         }
 
-
-
+        /// <summary>
+        /// 
+        /// </summary>
         public Int32 DoReadInt32(System.IO.Stream stream)
         {
             try
@@ -772,6 +884,9 @@ namespace Evo
             return default(Int32);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Int64 DoReadInt64(System.IO.Stream stream)
         {
             try
@@ -788,6 +903,9 @@ namespace Evo
             return default(Int64);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public long DoReadLong(System.IO.Stream stream)
         {
             try
@@ -804,6 +922,9 @@ namespace Evo
             return default(long);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public double DoReadDouble(System.IO.Stream stream)
         {
 
@@ -821,6 +942,9 @@ namespace Evo
             return default(double);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public float DoReadFloat(System.IO.Stream stream)
         {
             try
@@ -841,8 +965,6 @@ namespace Evo
             }
             return default(float);
         }
-
-
 
         /*
         public static void FromStream(this Map source, Stream stream)

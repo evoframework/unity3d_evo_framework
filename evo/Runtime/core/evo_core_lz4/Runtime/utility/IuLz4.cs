@@ -4,9 +4,15 @@ using System.Runtime.InteropServices;
 namespace Evo
 {
 
-
+    /// <summary>
+    /// 
+    /// </summary>
     public static class IuLz4
     {
+
+        /// <summary>
+        /// 
+        /// </summary>
         public class API
         {
 #if (UNITY_IOS || UNITY_WEBGL) && !UNITY_EDITOR
@@ -56,6 +62,9 @@ namespace Evo
             return result;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static byte[] Decompress(byte[] input)
         {
             byte[] result = null;

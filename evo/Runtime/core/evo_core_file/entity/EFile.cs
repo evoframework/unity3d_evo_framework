@@ -5,11 +5,12 @@ using System.IO;
 
 namespace Evo
 {
+	/// <summary>
+	/// 
+	/// </summary>
 	[System.Serializable]
 	public class EFile : EObject
 	{
-		//public MemoryStream memoryStream;
-
 
 		public byte[] byteData;
 
@@ -27,10 +28,16 @@ namespace Evo
 
 		public long length;
 
+		/// <summary>
+		/// 
+		/// </summary>
 		override public void ToStream (Stream stream)
 		{			
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
 		override public void FromStream(Stream stream)
 		{
 		}

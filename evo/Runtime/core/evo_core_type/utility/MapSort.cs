@@ -5,6 +5,9 @@ using System.Threading;
 
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [System.Serializable]
     public class MapSort : SortedDictionary<Id, System.Object>
     {
@@ -22,6 +25,9 @@ namespace Evo
             return null;
         }*/
 
+        /// <summary>
+        /// 
+        /// </summary>
         public MapSort Clone()
         {
             try
@@ -42,7 +48,9 @@ namespace Evo
             return null;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Contain(System.Object obj)
         {
             try
@@ -64,6 +72,9 @@ namespace Evo
             return false;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public T DoGet<T>(Id key)
         {
             try
@@ -80,6 +91,9 @@ namespace Evo
             return default(T);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoSet(Id key, System.Object value)
         {
             try
@@ -102,6 +116,9 @@ namespace Evo
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoSet(System.Object obj)
         {
             try
@@ -123,6 +140,9 @@ namespace Evo
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoDel(Id key)
         {
             try
@@ -143,7 +163,9 @@ namespace Evo
 
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void DoDel(System.Object obj)
         {
             try
@@ -165,6 +187,9 @@ namespace Evo
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         override public string ToString()
         {
             try

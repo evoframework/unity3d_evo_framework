@@ -9,9 +9,15 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class UReflection : UObject
     {
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static EObjectIClass DoReflection(EvoObject evoObject)
         {
             try
@@ -107,7 +113,9 @@ namespace Evo
             return null;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static EObjectIClass DoReflectionFull(EvoObject evoObject)
         {
             try
@@ -277,7 +285,9 @@ namespace Evo
             return null;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static EObjectIClass DoReflectionPublic(EvoObject evoObject)
         {
             try
@@ -334,6 +344,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static EObjectIClass DoReflectionFullPublic(EvoObject evoObject)
         {
             try

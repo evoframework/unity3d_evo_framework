@@ -8,7 +8,9 @@ namespace Evo
 {
     public static class IuTimeSpan
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static double Time(Action action, string title)
         {
             try
@@ -45,6 +47,9 @@ namespace Evo
             return -1;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static double SubTime(Action action, string title)
         {
             try
@@ -87,6 +92,9 @@ namespace Evo
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static double TimeLoop(int loopCounter, Action action, string title,bool logEnabled = true)
         {
             try
@@ -143,6 +151,9 @@ namespace Evo
             return 1;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void Effort(double time1, double time2, string title)
         {
             try
@@ -175,10 +186,11 @@ namespace Evo
             {
                 Debug.LogException(e);
             }
-
-
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void GarbageCollector()
         {
             try
@@ -186,16 +198,12 @@ namespace Evo
                 System.GC.Collect();
                 System.GC.WaitForPendingFinalizers();
                 System.GC.Collect();
-
             }
             catch (System.Exception e)
             {
                 Debug.LogException(e);
             }
-
-
         }
-
     }
 }
 

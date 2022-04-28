@@ -9,6 +9,9 @@ using System.IO;
 
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class TypeExtensions
     {
         public static T GetInstance<T>() where T : new()
@@ -17,6 +20,9 @@ namespace Evo
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public static class New<T> where T : new()
     {
         public static readonly Func<T> Instance = Expression.Lambda<Func<T>>
@@ -25,6 +31,9 @@ namespace Evo
                                                   ).Compile();
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public static class IuSerialize
     {
 
@@ -48,6 +57,9 @@ namespace Evo
             return IntPtr.Zero;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static T FromPtr<T>(IntPtr param) where T : IEObject
         {
             try
@@ -65,6 +77,9 @@ namespace Evo
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static byte[] ToBytePtr(IEObject eObject)
         {
             try
@@ -87,6 +102,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static T FromBytePtr<T>(byte[] arrayByte)
         {
             try
@@ -108,6 +126,9 @@ namespace Evo
             return default(T);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static IEObject FromBytePtr(string className, byte[] arrayByte)
         {
             try
@@ -129,6 +150,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static Byte[] StructureToBuffer<T>(T structure)
         {
             Byte[] buffer = new Byte[Marshal.SizeOf(typeof(T))];
@@ -144,6 +168,9 @@ namespace Evo
             return buffer;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static Byte[] StructureToBuffer(IEObject eObject)
         {
             try
@@ -170,6 +197,9 @@ namespace Evo
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static T BufferToStructure<T>(Byte[] buffer, Int32 offset = 0)
         {
             unsafe
@@ -181,7 +211,9 @@ namespace Evo
             }
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static string ToBase64(this IBinary source)
         {
             try
@@ -196,6 +228,9 @@ namespace Evo
             return null;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static byte[] ToArrayByte(this IBinary source)
         {
             try
@@ -216,8 +251,9 @@ namespace Evo
             return null;
         }
 
-
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static byte[] ToArrayByteFull(this IBinary source)
         {
             try
@@ -238,7 +274,9 @@ namespace Evo
             return null;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static void FromBase64(this IBinary source, string base64)
         {
             try
@@ -252,6 +290,9 @@ namespace Evo
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void FromArrayByte(this IBinary source, byte[] arrayByte)
         {
             try
@@ -268,7 +309,9 @@ namespace Evo
             }
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static void FromArrayByteFull(this IBinary source, byte[] arrayByte)
         {
             try
@@ -285,6 +328,9 @@ namespace Evo
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static Dictionary<Type, IEObject> mapEObjectIClone = new Dictionary<Type, IEObject>();
         /* 
             public static void ToStream (EObject eObject, Stream stream)
@@ -390,6 +436,9 @@ namespace Evo
         public static Dictionary<string, string> mapX = new Dictionary<string, string>();
         public static bool isInit = false;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void OnInit()
         {
             try
@@ -472,6 +521,9 @@ namespace Evo
         }
         */
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static String ToString(IEObject eObject)
         {
             try
@@ -489,6 +541,9 @@ namespace Evo
         }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static String ToString(byte[] arrayByte)
         {
             try
@@ -614,6 +669,10 @@ namespace Evo
             return "null";
         }
         */
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static String ToHex(byte[] arrayByte)
         {
             try
@@ -653,6 +712,9 @@ namespace Evo
             return "null";
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static IEObject Instantiate(string className)
         {
             try
