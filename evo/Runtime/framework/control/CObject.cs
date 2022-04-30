@@ -1,11 +1,13 @@
 using System;
 using UnityEngine;
 using System.Collections;
-using System.Threading.Tasks;
-using System.Threading;
+
 namespace Evo
 {
     [System.Serializable]
+    /// <summary>
+    /// OnDidStart
+    /// </summary>
     public abstract class CObject : EvoObject
     {
         /// <summary>

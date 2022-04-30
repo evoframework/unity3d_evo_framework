@@ -4,8 +4,7 @@ namespace Evo
 {
     /// <summary>
     /// 
-    /// </summary>
-   
+    /// </summary>  
     public interface IEObject : IEvo
     {
 

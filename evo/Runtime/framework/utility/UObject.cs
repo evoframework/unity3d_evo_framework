@@ -9,32 +9,20 @@ namespace Evo
     public class UObject : IEvo
     {
         #region IEvo
-        private Evo.Id _iD;
+        private string _iD;
 
-        private Evo.Time _time;
-
-        /// <summary>
-        /// Id
-        /// </summary>
-        public Evo.Id iD
+        public string iD
         {
             get => _iD;
             set => _iD = value;
         }
 
-        /// <summary>
-        /// Time
-        /// </summary>
-        public Evo.Time time
-        {
-            get => _time;
-            set => _time = value;
-        }
+        public long time { get; set; }
         #endregion
 
         public UObject()
         {
-            iD = new Id(this.GetType().Name);
+            iD = this.GetType().Name;
         }
 
     }
