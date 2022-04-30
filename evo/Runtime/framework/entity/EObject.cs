@@ -4,6 +4,9 @@ using System;
 
 namespace Evo
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [System.Serializable]
     public class EObject : IEObject, IBinary
     {
@@ -12,28 +15,10 @@ namespace Evo
         }
 
         #region IEvo
+      
+        public string iD {  get ; set; }
 
-        /// <summary>
-        /// Id
-        /// </summary>
-        public Evo.Id iD
-        {
-            get => _iD;
-            set => _iD = value;
-        }
-
-        /// <summary>
-        /// Time
-        /// </summary>
-        public Evo.Time time
-        {
-            get => _time;
-            set => _time = value;
-        }
-
-        private Evo.Id _iD;
-        private Evo.Time _time;
-
+        public long time { get; set; }
         #endregion
 
         /// <summary>

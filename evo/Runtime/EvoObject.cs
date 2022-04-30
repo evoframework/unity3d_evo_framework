@@ -11,35 +11,19 @@ namespace Evo
     [System.Serializable]
     public abstract class EvoObject : MonoBehaviour, IEvo
     {
+        #region IEvo  
+        public string iD { get; set; }
 
-        public static readonly string EVO_VERSION = "20220429";
+        public long time { get; set; }
+        #endregion
+
+        public static readonly string EVO_VERSION = "2022.04.30";
 
         public float timeDelay = 0.1f;
 
         public bool isInitialized = false;
 
-        #region IEvo
-        private Id _iD;
-        private Time _time;
 
-        /// <summary>
-        /// Id
-        /// </summary>
-        public Id iD
-        {
-            get => _iD;
-            set => _iD = value;
-        }
-
-        /// <summary>
-        /// Time
-        /// </summary>
-        public Time time
-        {
-            get => _time;
-            set => _time = value;
-        }
-        #endregion
 
         /// <summary>
         /// 
@@ -48,7 +32,7 @@ namespace Evo
         {
             try
             {
-                iD = new Id(GetType().Name + "(" + GetInstanceID().ToString().Replace("-", "0") + ")");
+                iD = GetType().Name + "(" + GetInstanceID().ToString().Replace("-", "0") + ")";
                 OnDidEnable("OnEnable");
             }
             catch (Exception exception)
