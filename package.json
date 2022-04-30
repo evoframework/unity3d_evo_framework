@@ -1,11 +1,12 @@
 {
 	"name": "it.evo.framework",
 	"displayName": "Evo Framework",
-	"version": "2022.4.29",
+	"version": "2022.5.1",
 	"unity": "2021.1",
 	"author": "Evo",
 	"description": "Evo Framework for Unity3d",
-	"dependencies": {},
+	"dependencies": {
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/evoframework/unity3d_evo_framework.git"
