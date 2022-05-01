@@ -3,7 +3,7 @@
 ![EvoFramework](https://avatars.githubusercontent.com/u/104525268?s=400&u=e477c223fc98678b0ea0125610891568435a7509&v=4) 
 
 
-Installing from a Git URL
+## Installing from a Git URL Unity3d
 
 https://docs.unity3d.com/Manual/upm-ui-giturl.html
 
@@ -18,23 +18,33 @@ https://github.com/evoframework/unity3d_evo_framework.git
 * Click Add
 
 
+## Installing from openupm
+https://openupm.com/packages/it.evo.framework/
+
+```console
+ Install openupm-cli
+$ npm install -g openupm-cli
+# OR yarn global add openupm-cli
+
+# Enter your Unity project folder
+$ cd YOUR_UNITY_PROJECT_FOLDER
+
+# Search a package
+$ openupm search "Evo Framework"
+
+# install evo framework
+$ openupm add it.evo.framework
+
+```
+
 ## Wiki:
 https://github.com/evoframework/unity3d_evo_framework/wiki
 
-
 ## Documentation:
-* evoframework.github.io
-https://github.com/evoframework/evoframework.github.io
-* html
-https://github.com/evoframework/evoframework.github.io/html/
-* latex:
- https://github.com/evoframework/unity3d_evo_framework/tree/main/Doc/latex
+* https://evoframework.github.io
 
 ## License:
 Attribution-NonCommercial-ShareAlike 4.0 International
 
 https://github.com/evoframework/unity3d_evo_framework/blob/main/LICENSE
 
-
-
-https://openupm.com/packages/it.evo.framework/
