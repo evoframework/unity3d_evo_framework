@@ -1,14 +1,41 @@
 {
 	"name": "it.evo.framework",
 	"displayName": "Evo Framework",
-	"version": "2022.5.1",
-	"unity": "2021.1",
-	"author": "Evo",
+	"version": "2022.5.1-pre.1",
+	"unity": "2020.3",
+	"keywords": [
+		"evo",
+		"framework",
+		"sdk",
+		"crypto",
+		"blockchain",
+		"pattern",
+		"uml"
+	],
+	"license": "Attribution-NonCommercial-ShareAlike 4.0 International",
 	"description": "Evo Framework for Unity3d",
-	"dependencies": {
+	"dependencies": {},
+	"publishConfig": {
+		"access": "public"
 	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/evoframework/unity3d_evo_framework.git"
+	},
+	"documentationUrl": "https://evoframework.github.io",
+	"licensesUrl": "https://github.com/evoframework/unity3d_evo_framework/blob/main/LICENSE",
+	"author": {
+		"name": "Evo",
+		"url": "https://github.com/evoframework/"
+	},
+	"samples": [
+		{
+			"displayName": "Examples",
+			"description": "Evo Framework Example",
+			"path": "Samples~/Examples"
+		}
+	],
+	"scripts": {
+		"version": ""
 	}
 }
