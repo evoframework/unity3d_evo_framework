@@ -1,6 +1,13 @@
-using UnityEngine;
-using System.Collections;
-using System;
+// ***************************************************************
+//
+// Evo Framework 
+//
+// doc:     https://evoframework.github.io
+//
+// licence: Attribution-NonCommercial-ShareAlike 4.0 International
+//
+//****************************************************************
+
 using System.Runtime.InteropServices;
 
 namespace Evo
@@ -8,7 +15,7 @@ namespace Evo
     /// <summary>
     /// 
     /// </summary>
-    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]   
+    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]   
     public unsafe struct EError : IEObject
     {
 

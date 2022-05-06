@@ -14,15 +14,15 @@ namespace Evo
         {
         }
 
-        #region IEvo
-      
-        public string iD {  get ; set; }
+        #region IEvo    
+        public string iD { get; set; }
 
         public long time { get; set; }
         #endregion
 
+        #region IBinary    
         /// <summary>
-        /// 
+        /// IBinary ToStream
         /// </summary>
         virtual public void ToStream(System.IO.Stream stream)
         {
@@ -31,13 +31,14 @@ namespace Evo
         }
 
         /// <summary>
-        /// 
+        /// IBinary FromStream
         /// </summary>
         virtual public void FromStream(System.IO.Stream stream)
         {
-            iD = this.DoReadId(stream);
-            time = this.DoReadTime(stream);
+            iD = this.DoReadString(stream);
+            time = this.DoReadLong(stream);
         }
+        #endregion
 
         /// <summary>
         /// 
@@ -46,6 +47,6 @@ namespace Evo
         {
             return iD + "\n" + time;
         }
-
+        
     }
 }

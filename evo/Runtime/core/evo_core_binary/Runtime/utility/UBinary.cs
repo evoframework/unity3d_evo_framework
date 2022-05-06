@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿// ***************************************************************
+//
+// Evo Framework 
+//
+// doc:     https://evoframework.github.io
+//
+// licence: Attribution-NonCommercial-ShareAlike 4.0 International
+//
+//****************************************************************
+
+using System.Collections;
 using System.IO;
 using System;
 using UnityEngine;
@@ -14,7 +24,7 @@ namespace Evo
         protected static UBinary instance;
 
         /// <summary>
-        /// œSingleton
+        /// Singleton
         /// </summary>
         private UBinary()
         {
@@ -35,51 +45,51 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(byte[] value, Stream stream)
+        public void DoWrite(byte[] _value, Stream _stream)
         {
-            if (value == null)
+            if (_value == null)
             {
-                DoWrite((int)0, stream);
+                DoWrite((int)0, _stream);
                
             }
             else
             {
-                byte[] arrayByte = value;
-                DoWrite(arrayByte.Length, stream);
-                stream.Write(arrayByte, 0, arrayByte.Length);
-                stream.Flush();
+                byte[] arrayByte = _value;
+                DoWrite(arrayByte.Length, _stream);
+                _stream.Write(arrayByte, 0, arrayByte.Length);
+                _stream.Flush();
             }
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(string value, Stream stream)
+        public void DoWrite(string _value, Stream _stream)
         {
-            if (value == null)
+            if (_value == null)
             {
-                DoWrite((int)-1, stream);
+                DoWrite((int)-1, _stream);
             }
             else
             {
-                //this.DoVerbose("DoWrite:" + value);
-                byte[] arrayByte = System.Text.Encoding.UTF8.GetBytes(value);
+                //this.DoVerbose("DoWrite:" + _value);
+                byte[] arrayByte = System.Text.Encoding.UTF8.GetBytes(_value);
                 //this.DoVerbose("DoWrite:" + arrayByte.Length);
-                DoWrite( arrayByte.Length, stream);
-                stream.Write(arrayByte, 0, arrayByte.Length);
-                stream.Flush();
+                DoWrite( arrayByte.Length, _stream);
+                _stream.Write(arrayByte, 0, arrayByte.Length);
+                _stream.Flush();
             }
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public string DoReadString(System.IO.Stream stream)
+        public string DoReadString(System.IO.Stream _stream)
         {
             try
             {
                 string value = null;
-                int lenght = DoReadInt(stream);
+                int lenght = DoReadInt(_stream);
 
                 if (lenght == -1)
                 {
@@ -89,7 +99,7 @@ namespace Evo
                 {
                     //this.DoVerbose("lenght:" + lenght);
                     byte[] arrayByte = new byte[lenght];
-                    stream.Read(arrayByte, 0, lenght);
+                    _stream.Read(arrayByte, 0, lenght);
                     value = System.Text.Encoding.UTF8.GetString(arrayByte);
                 }
 
@@ -105,18 +115,18 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(Texture2D value, Stream stream)
+        public void DoWrite(Texture2D _value, Stream _stream)
         {
-            if (value != null)
+            if (_value != null)
             {
-                DoWrite(true, stream);
-                byte[] arrayByte = value.EncodeToPNG();
-                DoWrite(arrayByte.Length, stream);
-                stream.Write(arrayByte, 0, arrayByte.Length);
+                DoWrite(true, _stream);
+                byte[] arrayByte = _value.EncodeToPNG();
+                DoWrite(arrayByte.Length, _stream);
+                _stream.Write(arrayByte, 0, arrayByte.Length);
             }
             else
             {
-                DoWrite(false, stream);
+                DoWrite(false, _stream);
 
             }
         }
@@ -124,19 +134,19 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(Color value, Stream stream)
+        public void DoWrite(Color _value, Stream _stream)
         {
-            if (value != null)
+            if (_value != null)
             {
-                DoWrite(true, stream);
-                DoWrite((float)value.r, stream);
-                DoWrite((float)value.g, stream);
-                DoWrite((float)value.b, stream);
-                DoWrite((float)value.a, stream);
+                DoWrite(true, _stream);
+                DoWrite((float)_value.r, _stream);
+                DoWrite((float)_value.g, _stream);
+                DoWrite((float)_value.b, _stream);
+                DoWrite((float)_value.a, _stream);
             }
             else
             {
-                DoWrite(false, stream);
+                DoWrite(false, _stream);
 
             }
         }
@@ -144,138 +154,176 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(float value, Stream stream)
+        public void DoWrite(float _value, Stream _stream)
         {
-
-            byte[] arrayByte = BitConverter.GetBytes(value);
-            stream.Write(arrayByte, 0, arrayByte.Length);
+            byte[] arrayByte = BitConverter.GetBytes(_value);
+            _stream.Write(arrayByte, 0, arrayByte.Length);
 
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(double value, Stream stream)
+        public void DoWrite(double _value, Stream _stream)
         {
-
-            byte[] arrayByte = BitConverter.GetBytes(value);
-            stream.Write(arrayByte, 0, arrayByte.Length);
+            byte[] arrayByte = BitConverter.GetBytes(_value);
+            this.DoVerbose("DoWrite" + arrayByte.Length + " " + _value);
+            _stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(bool value, Stream stream)
+        public void DoWrite(char _value, Stream _stream)
         {
-            byte[] arrayByte = BitConverter.GetBytes(value);
+            byte[] arrayByte = BitConverter.GetBytes(_value);      
+            _stream.Write(arrayByte, 0, arrayByte.Length);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public char DoReadChar(System.IO.Stream _stream)
+        {
+            try
+            {
+                byte[] arrayByte = new byte[sizeof(char)];
+                _stream.Read(arrayByte, 0, arrayByte.Length);
+                char value = BitConverter.ToChar(arrayByte, 0);
+                return value;
+            }
+            catch (Exception e)
+            {
+                this.DoException(e);
+            }
+
+            return default(char);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void DoWrite(bool _value, Stream _stream)
+        {
+            byte[] arrayByte = BitConverter.GetBytes(_value);
             //this.DoVerbose("sizeof(arrayByte bool)" + arrayByte.Length);
             //  Debug.Log("bool:" + IuSerialize.ToHex(arrayByte));
-            stream.Write(arrayByte, 0, arrayByte.Length);
+            _stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(Int16 value, Stream stream)
+        public void DoWrite(byte _value, Stream _stream)
+        {
+            byte[] arrayByte = BitConverter.GetBytes(_value);
+            Debug.LogWarning(arrayByte.Length);
+            _stream.Write(arrayByte, 0, arrayByte.Length);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void DoWrite(Int16 _value, Stream _stream)
         {
             // byte[] arrayByte = new byte[sizeof(Int16)];
 
             // WriteEndian(ref arrayByte, (ulong)value);
-            byte[] arrayByte = BitConverter.GetBytes(value);
-            stream.Write(arrayByte, 0, arrayByte.Length);
+            byte[] arrayByte = BitConverter.GetBytes(_value);
+            _stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(Int32 value, Stream stream)
+        public void DoWrite(Int32 _value, Stream _stream)
         {
             // byte[] arrayByte = new byte[sizeof(Int32)]; //BitConverter.GetBytes(value);
 
             // WriteEndian(ref arrayByte, (ulong)value);
-            byte[] arrayByte = BitConverter.GetBytes(value);
-            stream.Write(arrayByte, 0, arrayByte.Length);
+            byte[] arrayByte = BitConverter.GetBytes(_value);
+            _stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(Int64 value, Stream stream)
+        public void DoWrite(Int64 _value, Stream _stream)
         {
-            byte[] arrayByte = BitConverter.GetBytes(value);  
-            stream.Write(arrayByte, 0, arrayByte.Length);
+            byte[] arrayByte = BitConverter.GetBytes(_value);  
+            _stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
         
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(UInt16 value, Stream stream)
+        public void DoWrite(UInt16 _value, Stream _stream)
         {
             // byte[] arrayByte = new byte[sizeof(UInt16)];
 
             // WriteEndian(ref arrayByte, (ulong)value);
-            byte[] arrayByte = BitConverter.GetBytes(value);
-            stream.Write(arrayByte, 0, arrayByte.Length);
+            byte[] arrayByte = BitConverter.GetBytes(_value);
+            _stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(UInt32 value, Stream stream)
+        public void DoWrite(UInt32 _value, Stream _stream)
         {
             //byte[] arrayByte = new byte[sizeof(UInt32)];
 
             // WriteEndian(ref arrayByte, (ulong)value);
-            byte[] arrayByte = BitConverter.GetBytes(value);
-            stream.Write(arrayByte, 0, arrayByte.Length);
+            byte[] arrayByte = BitConverter.GetBytes(_value);
+            _stream.Write(arrayByte, 0, arrayByte.Length);
         }
 
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(UInt64 value, Stream stream)
+        public void DoWrite(UInt64 _value, Stream _stream)
         {
             // byte[] arrayByte = new byte[sizeof(UInt64)];
 
             //  WriteEndian(ref arrayByte, (ulong)value);
-            byte[] arrayByte = BitConverter.GetBytes(value);
-            stream.Write(arrayByte, 0, arrayByte.Length);
+            byte[] arrayByte = BitConverter.GetBytes(_value);
+            _stream.Write(arrayByte, 0, arrayByte.Length);
         }
     
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(IBinary value, Stream stream)
+        public void DoWrite(IBinary _value, Stream _stream)
         {
 
-            if (value != null)
+            if (_value != null)
             {
-                DoWrite(true, stream);
-                DoWrite(value.GetType().Name, stream);
-                value.ToStream(stream);
+                DoWrite(true, _stream);
+                DoWrite(_value.GetType().Name, _stream);
+                _value.ToStream(_stream);
             }
             else
             {
-                DoWrite(false, stream);
+                DoWrite(false, _stream);
             }
         }
 
 
         /*
-        public void DoWrite(EObject value, Stream stream)
+        public void DoWrite(EObject _value, Stream _stream)
         {
 
             if (value != null)
             {
-                DoWrite(true, stream);
-                DoWrite(value.GetType().Name, stream);
-                DoWrite(IuSerialize.ToBytePtr(value), stream);
-                // value.ToStream(stream);
+                DoWrite(true, _stream);
+                DoWrite(value.GetType().Name, _stream);
+                DoWrite(IuSerialize.ToBytePtr(value), _stream);
+                // _value.ToStream(stream);
             }
             else
             {
-                DoWrite(false, stream);
+                DoWrite(false, _stream);
             }
         }*/
 
@@ -283,18 +331,18 @@ namespace Evo
 
         /*
          * 
-         * def DoWriteEObject(value, stream: io.BytesIO):
-        if value == None:
-            IuBinary.DoWriteInt(-1, stream)
+         * def DoWriteEObject(value, _stream: io.BytesIO):
+        if _value == None:
+            IuBinary.DoWriteInt(-1, _stream)
         else:
-            IuBinary.DoWriteInt(0, stream)
-            IuBinary.DoWriteString(value.__class__.__module__, stream)
-            value.ToStream(stream)
-        stream.flush()
+            IuBinary.DoWriteInt(0, _stream)
+            IuBinary.DoWriteString(value.__class__.__module__, _stream)
+            _value.ToStream(stream)
+        _stream.flush()
 
     def DoReadEObject(stream: io.BytesIO):
         offset = 4
-        arrayByteLength = stream.read(offset)
+        arrayByteLength = _stream.read(offset)
         length = struct.unpack('<l', arrayByteLength[0:offset])[0]
         if length == -1:
             return None
@@ -308,24 +356,24 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(EObject eObject,System.IO.Stream stream)
+        public void DoWrite(EObject eObject,System.IO.Stream _stream)
         {
             try
             {
 
-                EObject value = null;
-                if (value == null)
+                EObject _value = null;
+                if (_value == null)
                 {
-                    DoWrite((int)-1, stream);
+                    DoWrite((int)-1, _stream);
                 }
                 else
                 {
-                    DoWrite((Int32)0, stream);
-                    DoWrite(value.GetType().Name,stream);
-                    value.ToStream(stream);
+                    DoWrite((Int32)0, _stream);
+                    DoWrite(_value.GetType().Name,_stream);
+                    _value.ToStream(_stream);
                 }
 
-                stream.Flush();
+                _stream.Flush();
             }
             catch (System.Exception e)
             {
@@ -336,11 +384,11 @@ namespace Evo
         }
 
         /*
-        public EObject DoReadEObject(System.IO.Stream stream)
+        public EObject DoReadEObject(System.IO.Stream _stream)
         {
             try
             {                
-                EObject value = null;
+                EObject _value = null;
                 int count = DoReadInt(stream);
 
                 if (count == -1)
@@ -350,9 +398,9 @@ namespace Evo
                 else
                 {
                     string className = DoReadString(stream);
-                    value = Instantiate(className);
-                    value.FromStream(stream);
-                    return value;
+                    _value = Instantiate(className);
+                    _value.FromStream(stream);
+                    return _value;
                 }
             }
             catch (System.Exception e)
@@ -367,12 +415,12 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public T DoReadEObject<T>(System.IO.Stream stream) where T:EObject, new()
+        public T DoReadEObject<T>(System.IO.Stream _stream) where T:EObject, new()
         {
             try
             {
-                EObject value = null;
-                int count = DoReadInt(stream);
+                EObject _value = null;
+                int count = DoReadInt(_stream);
 
                 if (count == -1)
                 {
@@ -380,11 +428,11 @@ namespace Evo
                 }
                 else
                 {
-                    string className = DoReadString(stream);
+                    string className = DoReadString(_stream);
 
-                    value = new T();// Instantiate<T>();
-                    value.FromStream(stream);
-                    return (T) value;
+                    _value = new T();// Instantiate<T>();
+                    _value.FromStream(_stream);
+                    return (T) _value;
                 }
             }
             catch (System.Exception e)
@@ -467,26 +515,26 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public void DoWrite(Map value, Stream stream)
+        public void DoWrite(Map _value, Stream _stream)
         {
 
             try
             {
-                if (value == null)
+                if (_value == null)
                 {
-                    DoWrite((int)-1, stream);
+                    DoWrite((int)-1, _stream);
                 }
                 else
                 {
-                    DoWrite((Int32)value.Count, stream);
-                    DoWrite(value.nameMap, stream);
+                    DoWrite((Int32)_value.Count, _stream);
+                    DoWrite(_value.nameMap, _stream);
 
-                    foreach (var kvp in value)
+                    foreach (var kvp in _value)
                     {
                         try
                         {
                             EObject eObject = (EObject)kvp.Value;
-                            eObject.ToStream(stream);
+                            eObject.ToStream(_stream);
                         }
                         catch (System.Exception e)
                         {
@@ -496,7 +544,7 @@ namespace Evo
 
                 }
 
-                stream.Flush();
+                _stream.Flush();
             }
             catch (System.Exception e)
             {
@@ -505,11 +553,11 @@ namespace Evo
 
         }
         /*
-        public Map DoReadMap(System.IO.Stream stream)
+        public Map DoReadMap(System.IO.Stream _stream)
         {
             try
             {
-                Map value = null;
+                Map _value = null;
                 int count = DoReadInt(stream);
               
 
@@ -521,17 +569,17 @@ namespace Evo
                 {
                     this.DoError("map count:" + count);
                     string name = DoReadString(stream);
-                    value = new Map();
-                    value.nameMap = name;
+                    _value = new Map();
+                    _value.nameMap = name;
 
                     for (int i = 0; i < count; i++)
                     {
                         var eObject = DoReadEObject(stream);
-                        value.DoSet(eObject);
+                        _value.DoSet(eObject);
                     }         
                 }
 
-                return value;
+                return _value;
             }
             catch (Exception e)
             {
@@ -544,12 +592,12 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public Map DoReadMap<T>(System.IO.Stream stream) where T:EObject,new ()
+        public Map DoReadMap<T>(System.IO.Stream _stream) where T:EObject,new ()
         {
             try
             {
                 Map value = null;
-                int count = DoReadInt(stream);
+                int count = DoReadInt(_stream);
 
 
                 if (count == -1)
@@ -559,13 +607,13 @@ namespace Evo
                 else
                 {
                     //this.DoVerbose("map count:" + count);
-                    string name = DoReadString(stream);
+                    string name = DoReadString(_stream);
                     value = new Map();
                     value.nameMap = name;
 
                     for (int i = 0; i < count; i++)
                     {
-                        var eObject = DoReadEObject<T>(stream);
+                        var eObject = DoReadEObject<T>(_stream);
                         value.DoSet(eObject);
                     }
                 }
@@ -583,26 +631,26 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public Color DoReadColor(System.IO.Stream stream)
+        public Color DoReadColor(System.IO.Stream _stream)
         {
             try
             {
                 Color value = default(Color);
-                int lenght = DoReadInt(stream);
+                int lenght = DoReadInt(_stream);
 
 
 
                 if (lenght != 0)
                 {
-                    float r = DoReadFloat(stream);
+                    float r = DoReadFloat(_stream);
 
-                    float g = DoReadFloat(stream);
-
-
-                    float b = DoReadFloat(stream);
+                    float g = DoReadFloat(_stream);
 
 
-                    float a = DoReadFloat(stream);
+                    float b = DoReadFloat(_stream);
+
+
+                    float a = DoReadFloat(_stream);
 
 
                     value = new Color(r, g, b, a);
@@ -624,17 +672,36 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public byte[] DoReadByteArray(System.IO.Stream stream)
+        public byte DoReadByte(System.IO.Stream _stream)
+        {
+            try
+            {
+                byte[] arrayByte = new byte[sizeof(byte)];
+                _stream.Read(arrayByte, 0, arrayByte.Length);
+                byte value = arrayByte[0];
+                return value;
+            }
+            catch (Exception e)
+            {
+                this.DoException(e);
+            }
+            return default(byte);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public byte[] DoReadByteArray(System.IO.Stream _stream)
         {
             try
             {
                 byte[] value;
-                int lenght = DoReadInt(stream);
+                int lenght = DoReadInt(_stream);
 
                 if (lenght != 0)
                 {
                     byte[] arrayByte = new byte[lenght];
-                    stream.Read(arrayByte, 0, lenght);
+                    _stream.Read(arrayByte, 0, lenght);
                     value = arrayByte;
                 }
                 else
@@ -653,13 +720,13 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public bool DoReadBoolean(System.IO.Stream stream)
+        public bool DoReadBoolean(System.IO.Stream _stream)
         {
             try
             {
                 //this.DoVerbose("sizeof(bool)" + sizeof(bool));
                 byte[] arrayByte = new byte[sizeof(bool)];
-                stream.Read(arrayByte, 0, arrayByte.Length);
+                _stream.Read(arrayByte, 0, arrayByte.Length);
                 bool value = BitConverter.ToBoolean(arrayByte, 0);
                 return value;
             }
@@ -673,18 +740,18 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public Texture2D DoReadTexture2D(System.IO.Stream stream)
+        public Texture2D DoReadTexture2D(System.IO.Stream _stream)
         {
             try
             {
                 Texture2D value = default(Texture2D);
-                int lenght = DoReadInt(stream);
+                int lenght = DoReadInt(_stream);
 
                 if (lenght != 0)
                 {
 
                     byte[] arrayByte = new byte[lenght];
-                    stream.Read(arrayByte, 0, lenght);
+                    _stream.Read(arrayByte, 0, lenght);
 
                     value = new Texture2D(0, 0);
                     value.LoadImage(arrayByte);
@@ -706,12 +773,12 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public UInt16 DoReadUInt16(System.IO.Stream stream)
+        public UInt16 DoReadUInt16(System.IO.Stream _stream)
         {
             try
             {
                 byte[] arrayByte = new byte[sizeof(bool)];
-                stream.Read(arrayByte, 0, arrayByte.Length);
+                _stream.Read(arrayByte, 0, arrayByte.Length);
                 UInt16 value = BitConverter.ToUInt16(arrayByte, 0);
                 return value;
             }
@@ -725,12 +792,12 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public UInt32 DoReadUInt32(System.IO.Stream stream)
+        public UInt32 DoReadUInt32(System.IO.Stream _stream)
         {
             try
             {
                 byte[] arrayByte = new byte[sizeof(UInt32)];
-                stream.Read(arrayByte, 0, arrayByte.Length);
+                _stream.Read(arrayByte, 0, arrayByte.Length);
                 UInt32 value = BitConverter.ToUInt32(arrayByte, 0);
                 return value;
             }
@@ -744,12 +811,12 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public UInt64 DoReadUInt64(System.IO.Stream stream)
+        public UInt64 DoReadUInt64(System.IO.Stream _stream)
         {
             try
             {
                 byte[] arrayByte = new byte[sizeof(UInt64)];
-                stream.Read(arrayByte, 0, arrayByte.Length);
+                _stream.Read(arrayByte, 0, arrayByte.Length);
                 UInt64 value = BitConverter.ToUInt64(arrayByte, 0);
                 return value;
             }
@@ -763,12 +830,12 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public Int16 DoReadInt16(System.IO.Stream stream)
+        public Int16 DoReadInt16(System.IO.Stream _stream)
         {
             try
             {
                 byte[] arrayByte = new byte[sizeof(Int16)];
-                stream.Read(arrayByte, 0, arrayByte.Length);
+                _stream.Read(arrayByte, 0, arrayByte.Length);
                 Int16 value = BitConverter.ToInt16(arrayByte, 0);
                 return value;
             }
@@ -782,13 +849,13 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public int DoReadInt(System.IO.Stream stream)
+        public int DoReadInt(System.IO.Stream _stream)
         {
 
             try
             {
                 byte[] arrayByte = new byte[sizeof(int)];
-                stream.Read(arrayByte, 0, arrayByte.Length);
+                _stream.Read(arrayByte, 0, arrayByte.Length);
                 int value = BitConverter.ToInt32(arrayByte, 0);
                 return value;
             }
@@ -802,12 +869,12 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public Int32 DoReadInt32(System.IO.Stream stream)
+        public Int32 DoReadInt32(System.IO.Stream _stream)
         {
             try
             {
                 byte[] arrayByte = new byte[sizeof(Int32)];
-                stream.Read(arrayByte, 0, arrayByte.Length);
+                _stream.Read(arrayByte, 0, arrayByte.Length);
                 Int32 value = BitConverter.ToInt32(arrayByte, 0);
                 return value;
             }
@@ -821,12 +888,12 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public Int64 DoReadInt64(System.IO.Stream stream)
+        public Int64 DoReadInt64(System.IO.Stream _stream)
         {
             try
             {
                 byte[] arrayByte = new byte[sizeof(Int64)];
-                stream.Read(arrayByte, 0, arrayByte.Length);
+                _stream.Read(arrayByte, 0, arrayByte.Length);
                 Int64 value = BitConverter.ToInt64(arrayByte, 0);
                 return value;
             }
@@ -840,12 +907,12 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public long DoReadLong(System.IO.Stream stream)
+        public long DoReadLong(System.IO.Stream _stream)
         {
             try
             {
                 byte[] arrayByte = new byte[sizeof(Int64)];
-                stream.Read(arrayByte, 0, arrayByte.Length);
+                _stream.Read(arrayByte, 0, arrayByte.Length);
                 Int64 value = BitConverter.ToInt64(arrayByte, 0);
                 return value;
             }
@@ -859,15 +926,16 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public double DoReadDouble(System.IO.Stream stream)
+        public double DoReadDouble(System.IO.Stream _stream)
         {
 
             try
             {
-                //this.DoVerbose("sizeof(double)" + sizeof(double));
+                this.DoVerbose("sizeof(double):" + sizeof(double));
                 byte[] arrayByte = new byte[sizeof(double)];
-                stream.Read(arrayByte, 0, arrayByte.Length);
+                _stream.Read(arrayByte, 0, arrayByte.Length);
                 double value = BitConverter.ToDouble(arrayByte, 0);
+                this.DoVerbose("(double):" + value);
                 return value;
             }
             catch (Exception e)
@@ -880,7 +948,7 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public float DoReadFloat(System.IO.Stream stream)
+        public float DoReadFloat(System.IO.Stream _stream)
         {
             try
             {
@@ -888,7 +956,7 @@ namespace Evo
 
                 byte[] arrayByte = new byte[sizeof(float)];
 
-                stream.Read(arrayByte, 0, arrayByte.Length);
+                _stream.Read(arrayByte, 0, arrayByte.Length);
 
                 value = BitConverter.ToSingle(arrayByte, 0);
                 return value;
@@ -902,7 +970,7 @@ namespace Evo
         }
 
         /*
-        public static void FromStream(this Map source, Stream stream)
+        public static void FromStream(this Map source, Stream _stream)
         {
             try
             {
@@ -930,17 +998,17 @@ namespace Evo
         }*/
 
         /*
-        public EObject DoReadEObject(System.IO.Stream stream)
+        public EObject DoReadEObject(System.IO.Stream _stream)
         {
             try
             {
                 // EObject eObjectReturn = null;
-                EObject value = null;
+                EObject _value = null;
                 bool isValid = DoReadBoolean(stream);
 
                 if (!isValid)
                 {
-                    value = null;
+                    _value = null;
                 }
                 else
                 {
@@ -949,7 +1017,7 @@ namespace Evo
                     var arrayByte = DoReadByteArray(stream);
                     EObject eObjectI = IuSerialize.FromBytePtr(className, arrayByte);
 
-                    return value;
+                    return _value;
                 }
             }
             catch (System.Exception e)

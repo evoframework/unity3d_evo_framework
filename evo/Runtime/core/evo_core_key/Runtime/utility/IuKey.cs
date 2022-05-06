@@ -1,5 +1,14 @@
+// ***************************************************************
+//
+// Evo Framework 
+//
+// doc:     https://evoframework.github.io
+//
+// licence: Attribution-NonCommercial-ShareAlike 4.0 International
+//
+//****************************************************************
+
 using UnityEngine;
-using System.Collections;
 using System;
 namespace Evo
 {
@@ -21,11 +30,11 @@ namespace Evo
         /// <summary>
         /// 
         /// </summary>
-        public static string ToId(string str)
+        public static string ToId(string _str)
         {
-            if(str != null)
+            if(_str != null)
             {
-                return str;
+                return IuCryptSha.GenerateSha256(_str); ;
             }
             else
             {
@@ -154,12 +163,9 @@ namespace Evo
             try
             {
                 string hashSha = IuCryptSha.GenerateSha256(iD);
-
-
                 byte[] bytes = System.Text.Encoding.ASCII.GetBytes(hashSha);
                 int result = BitConverter.ToInt32(bytes, 0);
                 return result;
-
             }
             catch (System.Exception e)
             {
@@ -177,9 +183,7 @@ namespace Evo
         {
             try
             {
-
                 evoObject.iD = evoObject.GetType().Name + "-" + evoObject.GetInstanceID().ToString().Replace("-", "0");
-
             }
             catch (System.Exception e)
             {

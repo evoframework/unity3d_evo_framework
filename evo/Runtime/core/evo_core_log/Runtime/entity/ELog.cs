@@ -1,7 +1,13 @@
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System;
+// ***************************************************************
+//
+// Evo Framework 
+//
+// doc:     https://evoframework.github.io
+//
+// licence: Attribution-NonCommercial-ShareAlike 4.0 International
+//
+//****************************************************************
+
 using System.Runtime.InteropServices;
 
 namespace Evo
@@ -10,53 +16,38 @@ namespace Evo
     /// 
     /// </summary>
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
-    public unsafe struct ELog : IEObject
+    public  class ELog : EObject
     {
-        #region IEvo
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 64)]
-        private string _iD;
+        public EvoObject evoObject;
 
-        public string iD
-        {
-            get => _iD;
-            set => _iD = value;
-        }
+        public string idCaller;
 
-        public long time { get; set; }
-        #endregion
+        public string trace;
 
-        /*
-            public EvoObject evoObject;
+        public string tag;
 
-            public string idCaller;
+        public long tick;
 
-            public string trace;
+        public long tickOffset;
 
-            public string tag;
+        public string message;
 
-            public long tick;
+        public string messageBack;
 
-            public long tickOffset;
+        public string messageEvoCallBack;
 
-            public string message;
+        public System.Object parameter;
+        public string traceStr;
 
-            public string messageBack;
+        public bool isLocal;
 
-            public string messageEvoCallBack;
+        public UnityEngine.Object objectContext;
 
-            public System.Object parameter;
-            public string traceStr;
+        public MapObject<string> mapTrace;
 
-            public bool isLocal;
+        public MapObject<string> mapStackTrace;
 
-            public UnityEngine.Object objectContext;
-
-            public MapObject<string> mapTrace;
-
-            public MapObject<string> mapStackTrace;
-
-            public List<string> arrayTrace;
-        */
+        public MapObject<string> arrayTrace;
 
     }
 }

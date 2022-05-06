@@ -32,7 +32,7 @@ namespace EvoTest
             this.DoVerbose("OnDidStart", obj);
             var eObjectTest = new EObjectStructTest();
             eObjectTest.iD = "e1";
-            eObjectTest.propertyStr = "propertyStrVal";
+            eObjectTest.propertyString = "propertyStrVal";
             this.DoNotify(evoEvent, eObjectTest);
         }
 

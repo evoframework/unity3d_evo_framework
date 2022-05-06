@@ -10,7 +10,7 @@ namespace EvoTest
     {
 
         #region IEvo
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 64)]
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 65)]
         private string _iD;
 
         public string iD
@@ -22,13 +22,18 @@ namespace EvoTest
         public long time { get; set; }
         #endregion
 
-        public Int64 propertyInt;
+        public int propertyInt;
+        public float propertyFloat;
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 65)] //+\0
+        public string propertyString;
+       // public Map propertyMap;
         public long propertyLong;
+        public char propertyChar;
 
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 64)]
-        public string propertyStr;
-        public bool propertyBool;
-        public bool propertyDouble;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
+        public byte[] propertyByteArray;
+        public bool propertBool;
+        public double propertyDouble;
 
         public override string ToString()
         {

@@ -1,7 +1,15 @@
-﻿using UnityEngine;
+﻿// ***************************************************************
+//
+// Evo Framework 
+//
+// doc:     https://evoframework.github.io
+//
+// licence: Attribution-NonCommercial-ShareAlike 4.0 International
+//
+//****************************************************************
+
+using UnityEngine;
 using System.Collections.Generic;
-using System;
-using System.Threading;
 
 namespace Evo
 {
