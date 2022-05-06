@@ -1,5 +1,5 @@
 {
-    "name": "Editor.Evo.Core",
+    "name": "Test.Editor.Evo.Core",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",

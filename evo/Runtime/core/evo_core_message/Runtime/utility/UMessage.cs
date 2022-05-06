@@ -1,17 +1,14 @@
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using System.Threading;
-using System;
-using System.Security.Cryptography;
-using System.Net;
-using System.IO.Compression;
+// ***************************************************************
+//
+// Evo Framework 
+//
+// doc:     https://evoframework.github.io
+//
+// licence: Attribution-NonCommercial-ShareAlike 4.0 International
+//
+//****************************************************************
 
-using System.Threading.Tasks;
-using System.Runtime.InteropServices;
-using Unity.Collections.LowLevel.Unsafe;
+using System;
 
 namespace Evo
 {

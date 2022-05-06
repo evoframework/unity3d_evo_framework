@@ -6,7 +6,7 @@ namespace Evo
 {
     [System.Serializable]
     /// <summary>
-    /// OnDidStart
+    /// CObject
     /// </summary>
     public abstract class CObject : EvoObject
     {

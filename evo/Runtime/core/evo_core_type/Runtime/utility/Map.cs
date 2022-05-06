@@ -1,11 +1,15 @@
-﻿using UnityEngine;
+﻿// ***************************************************************
+//
+// Evo Framework 
+//
+// doc:     https://evoframework.github.io
+//
+// licence: Attribution-NonCommercial-ShareAlike 4.0 International
+//
+//****************************************************************
+
+using UnityEngine;
 using System.Collections.Generic;
-using System.Collections;
-using System;
-using System.Threading;
-using System.Runtime.Serialization;
-using System.Linq;
-using System.IO;
 namespace Evo
 {
     /// <summary>

@@ -1,12 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
+// ***************************************************************
+//
+// Evo Framework 
+//
+// doc:     https://evoframework.github.io
+//
+// licence: Attribution-NonCommercial-ShareAlike 4.0 International
+//
+//****************************************************************
+
+
 using UnityEngine;
-using UnityEngine.Events;
 using System.Threading.Tasks;
-using System.Threading;
-using System;
-using System.Runtime.InteropServices;
-using Unity.Collections.LowLevel.Unsafe;
 
 namespace Evo
 {
